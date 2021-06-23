@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LetCode - 数组篇 | 🚲 Allan_Liu的博客</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/images/logo.jpeg">
+    
+    <link rel="preload" href="/assets/css/0.styles.3512eafc.css" as="style"><link rel="preload" href="/assets/js/app.db22b226.js" as="script"><link rel="preload" href="/assets/js/2.1c210bf0.js" as="script"><link rel="preload" href="/assets/js/25.61a6120c.js" as="script"><link rel="prefetch" href="/assets/js/10.a04ed6de.js"><link rel="prefetch" href="/assets/js/11.fd334de7.js"><link rel="prefetch" href="/assets/js/12.5e677851.js"><link rel="prefetch" href="/assets/js/13.dea6a201.js"><link rel="prefetch" href="/assets/js/14.04d0a0fd.js"><link rel="prefetch" href="/assets/js/15.6c86a091.js"><link rel="prefetch" href="/assets/js/16.b7ce33a0.js"><link rel="prefetch" href="/assets/js/17.87d1ed06.js"><link rel="prefetch" href="/assets/js/18.45b87eba.js"><link rel="prefetch" href="/assets/js/19.56307369.js"><link rel="prefetch" href="/assets/js/20.25bbbad5.js"><link rel="prefetch" href="/assets/js/21.c2d38ca2.js"><link rel="prefetch" href="/assets/js/22.958b1db0.js"><link rel="prefetch" href="/assets/js/23.2b7d8b6a.js"><link rel="prefetch" href="/assets/js/24.8ca374b0.js"><link rel="prefetch" href="/assets/js/26.a6dbcf9f.js"><link rel="prefetch" href="/assets/js/27.42ae66b3.js"><link rel="prefetch" href="/assets/js/28.61d8dfcd.js"><link rel="prefetch" href="/assets/js/29.0a5490f3.js"><link rel="prefetch" href="/assets/js/3.166305a0.js"><link rel="prefetch" href="/assets/js/30.eec7751d.js"><link rel="prefetch" href="/assets/js/31.8b3aafdc.js"><link rel="prefetch" href="/assets/js/32.44ebad24.js"><link rel="prefetch" href="/assets/js/33.1196f2e4.js"><link rel="prefetch" href="/assets/js/34.89693eb8.js"><link rel="prefetch" href="/assets/js/35.e9a08c17.js"><link rel="prefetch" href="/assets/js/36.38eaa1e0.js"><link rel="prefetch" href="/assets/js/37.71690d26.js"><link rel="prefetch" href="/assets/js/38.782a7010.js"><link rel="prefetch" href="/assets/js/39.b907c580.js"><link rel="prefetch" href="/assets/js/4.38dc8d13.js"><link rel="prefetch" href="/assets/js/40.f998e32e.js"><link rel="prefetch" href="/assets/js/41.5a48de7b.js"><link rel="prefetch" href="/assets/js/42.5fd76a29.js"><link rel="prefetch" href="/assets/js/43.de530bde.js"><link rel="prefetch" href="/assets/js/44.2eecb315.js"><link rel="prefetch" href="/assets/js/45.47a71ee1.js"><link rel="prefetch" href="/assets/js/46.3455c640.js"><link rel="prefetch" href="/assets/js/47.03c1d6c1.js"><link rel="prefetch" href="/assets/js/48.ee8a0b8f.js"><link rel="prefetch" href="/assets/js/49.4c538c03.js"><link rel="prefetch" href="/assets/js/5.f2c78fc3.js"><link rel="prefetch" href="/assets/js/50.34d74c52.js"><link rel="prefetch" href="/assets/js/51.19235ba9.js"><link rel="prefetch" href="/assets/js/52.6dd38434.js"><link rel="prefetch" href="/assets/js/53.3f77d11c.js"><link rel="prefetch" href="/assets/js/54.d9ea78fb.js"><link rel="prefetch" href="/assets/js/55.1650a4e4.js"><link rel="prefetch" href="/assets/js/56.69de1904.js"><link rel="prefetch" href="/assets/js/6.6a6823cc.js"><link rel="prefetch" href="/assets/js/7.43387c2d.js"><link rel="prefetch" href="/assets/js/8.3d44836c.js"><link rel="prefetch" href="/assets/js/9.cdaced83.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3512eafc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">🚲 Allan_Liu的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JavaScript篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/JavaScript/data.html" class="sidebar-link">JavaScript知识总结篇</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>React.js + egg.js</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/Reactjs/react1.html" class="sidebar-link">1. UmiJS 是个啥</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>React篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/React/React-SSR.html" class="sidebar-link">React-SSR 服务器端渲染 源码链接</a></li><li><a href="/guide/React/hooks.html" class="sidebar-link">React - hooks</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端性能篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/performanceOptimization/foreword.html" class="sidebar-link">前言</a></li><li><a href="/guide/performanceOptimization/netWork1.html" class="sidebar-link">网络层优化 - 网络层</a></li><li><a href="/guide/performanceOptimization/netWork2.html" class="sidebar-link">网络层优化 - 请求层</a></li><li><a href="/guide/performanceOptimization/localstorage1.html" class="sidebar-link">存储篇优化 - 浏览器缓存</a></li><li><a href="/guide/performanceOptimization/localstorage2.html" class="sidebar-link">存储篇优化 - 本地缓存</a></li><li><a href="/guide/performanceOptimization/cdn.html" class="sidebar-link">CDN小结</a></li><li><a href="/guide/performanceOptimization/application1.html" class="sidebar-link">应用篇 - 懒加载</a></li><li><a href="/guide/performanceOptimization/application2.html" class="sidebar-link">应用篇 - 防抖、节流</a></li><li><a href="/guide/performanceOptimization/render1.html" class="sidebar-link">渲染篇 - 服务端渲染</a></li><li><a href="/guide/performanceOptimization/render2.html" class="sidebar-link">渲染篇 - 浏览器端渲染</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Angular篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/angular/install.html" class="sidebar-link">Angular 9.0 框架搭建 源码链接</a></li><li><a href="/guide/angular/angular1.html" class="sidebar-link">Angular 基础配置  (1-1)</a></li><li><a href="/guide/angular/angular2.html" class="sidebar-link">Angular 项目结构 (2-1)</a></li><li><a href="/guide/angular/angular3.html" class="sidebar-link">Angular UI组件  (2-2)</a></li><li><a href="/guide/angular/angular4.html" class="sidebar-link">Angular Material (2-3)</a></li><li><a href="/guide/angular/angular5.html" class="sidebar-link">Angular Material (2-4)</a></li><li><a href="/guide/angular/angular7.html" class="sidebar-link">Angular 依赖注入 （4-1）</a></li><li><a href="/guide/angular/angular8.html" class="sidebar-link">Angular基础知识 （4-2）</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>数据库篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/database/mongodb1.html" class="sidebar-link">mongodb 如何在mac构建</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端自动化篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/autoTest/lesson1.html" class="sidebar-link">前端自动化【源码链接】</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>算法篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/arithmetic/array.html" class="active sidebar-link">LetCode - 数组篇</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>typeScript篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/typeScript/foreword.html" class="sidebar-link">前言</a></li><li><a href="/guide/typeScript/types.html" class="sidebar-link">定义类型</a></li><li><a href="/guide/typeScript/interface.html" class="sidebar-link">定义接口</a></li><li><a href="/guide/typeScript/class.html" class="sidebar-link">定义类</a></li><li><a href="/guide/typeScript/function.html" class="sidebar-link">定义函数</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Docker篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/Docker/docker1.html" class="sidebar-link">docker</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>小程序篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/miniProgram/taro2.html" class="sidebar-link">Taro 小程序 代码规范</a></li><li><a href="/guide/miniProgram/taro.html" class="sidebar-link">Taro 框架开发小程序环境配置</a></li><li><a href="/guide/miniProgram/taro1.html" class="sidebar-link">Taro 小程序架构设计</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>正则篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/regexp/Regexp.html" class="sidebar-link">正则一</a></li><li><a href="/guide/regexp/Regexp1.html" class="sidebar-link">正则二</a></li><li><a href="/guide/regexp/Regexp2.html" class="sidebar-link">正则三</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>杂记录篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/jottings/https.html" class="sidebar-link">计算机通信知识小结</a></li><li><a href="/guide/jottings/fire.html" class="sidebar-link">火焰图 -- Linux下的性能监控</a></li><li><a href="/guide/jottings/gitLab.html" class="sidebar-link">gitLab</a></li><li><a href="/guide/jottings/gitHub.html" class="sidebar-link">gitHub</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="letcode-数组篇"><a href="#letcode-数组篇" class="header-anchor">#</a> LetCode - 数组篇</h1> <h3 id="写在前面"><a href="#写在前面" class="header-anchor">#</a> 写在前面</h3> <p>空间复杂度：占用的内存大小<br>
+时间复杂度：消耗的次数多少</p> <h4 id="_1-从排序数组中删除重复项"><a href="#_1-从排序数组中删除重复项" class="header-anchor">#</a> 1. <a href="https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/1/array/21/" target="_blank" rel="noopener noreferrer">从排序数组中删除重复项<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+    var removeDuplicates = function(nums) {
+        for(let i = 0; i &lt; nums.length; i ++) {
+            if(nums[i] == nums[i +1]) {
+                nums.splice(i, 1)
+                i --
+            }
+        }
+        return nums.length
+    };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h4 id="_2-买卖股票的最佳时机-ii"><a href="#_2-买卖股票的最佳时机-ii" class="header-anchor">#</a> 2. <a href="https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/1/array/22/" target="_blank" rel="noopener noreferrer">买卖股票的最佳时机 II<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>    /**
+    * @param {number[]} prices
+    * @return {number}
+    */
+    var maxProfit = function(prices) {
+        var max = 0;
+        var len = prices.length;
+        for (var i=0; i&lt;len; i++){
+            if (prices[i+1]&gt;prices[i]){
+                max += prices[i+1]-prices[i];
+            }
+        }
+        return max;
+    };
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><h4 id="_3-旋转数组"><a href="#_3-旋转数组" class="header-anchor">#</a> 3. <a href="https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/1/array/23/" target="_blank" rel="noopener noreferrer">旋转数组<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>1. var rotate = function(nums, k) {
+    const len = nums.length;
+    const moveIndex = len - k;
+    for(let i = 0; i&lt;k; i ++) {
+        nums.unshift(nums.pop())
+    }
+}
+
+2. var rotate = function(nums, k) {
+    const len = nums.length;
+    // 兼容 数组长度小于位置数目的情况（解释：移动元素数量为开始移动索引元素前的所有元素数量）
+    // 例如：[1,2,3]   k = 4 
+    const moveIndex = len &gt; k ? len - k : len - (k - len)  
+    for(let i = 0; i&lt;moveIndex; i ++) {
+         nums.push(nums[0])
+         nums.splice(0, 1)
+    }
+}
+
+3. 批量截断，插到数组前面 
+var rotate = function(nums, k) {
+    let len = nums.length
+    return nums.unshift(...nums.splice(len-k,k))
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h4 id="_4-存在重复"><a href="#_4-存在重复" class="header-anchor">#</a> 4. <a href="https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/1/array/24/" target="_blank" rel="noopener noreferrer">存在重复<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>1. 11%
+var containsDuplicate = function(nums) {
+    const len = nums.length;
+    var res;
+    if(len &lt; 2) return false
+    for(let i =0; i &lt; len; i ++) {
+        const temp = nums[i]
+        nums.splice(i, 1)
+        if(nums.indexOf(temp) != -1 ) {
+            res = true
+            break;
+        }else {
+            res = false
+        }
+    }
+    return res  
+};
+
+2. 24.48%
+var containsDuplicate = function(nums) {
+    const len = nums.length;
+    if(len &lt; 2) return false
+    var res;
+    for(let i = 0; i&lt;len; i ++) {
+        for(let j = i +1; j&lt;len; j ++) {
+            if(nums[i] === nums[j]) {
+                return true
+            }else {
+                res = false
+            }
+        }
+    }
+    return res
+};
+
+3. 32%
+var containsDuplicate = function(nums) {
+    nums.sort();
+    for(let i = 0; i &lt; nums.length; i++) {
+        if(nums[i] == nums[i+1]) {
+            return true;
+        }
+    }
+    return false;
+}
+
+4. 95%
+var containsDuplicate = function(nums) {
+    return !(new Set(nums).size === nums.length)
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br></div></div><h4 id="_5-只出现一次的数字"><a href="#_5-只出现一次的数字" class="header-anchor">#</a> 5. <a href="https://leetcode-cn.com/problems/single-number/submissions/" target="_blank" rel="noopener noreferrer">只出现一次的数字<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></h4> <div class="language- line-numbers-mode"><pre class="language-text"><code>1. 104 ms   36.5 MB    先排序，相邻项一致，执行i+2 操作
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var singleNumber = function(nums) {
+    nums.sort()
+    for (let i = 0; i &lt; nums.length;) {
+        if(nums[i] === nums[i +1]) {
+            i += 2
+        } else{
+            return nums[i]
+        }
+    }
+}
+
+2.  96 ms        36.9 MB   先排序，然后前中后三项对比
+var singleNumber = function(nums) {
+  nums = nums.sort();
+  for (let i = 0; i &lt; nums.length; i++) {
+    if (nums[i] !== nums[i - 1] &amp;&amp; nums[i] !== nums[i + 1]) {
+        return nums[i];
+    }
+  }
+};
+
+3.   404 ms      35.1 MB      利用indexOf 和 lastIndexOf特性查找
+var singleNumber = function(nums) {
+    let len = nums.length;
+    for(let i =0; i&lt;len; i ++) {
+        if( nums.indexOf(nums[i]) === nums.lastIndexOf(nums[i]) ) {
+            return nums[i]
+        }
+    }
+}
+
+4. 96 ms        37.2 MB    哈希对比，先存入对象中，如若还有重复元素，就在对象中删除
+var singleNumber = function(nums) {
+  let numsObj = {};
+  for (let i = 0; i &lt; nums.length; i++) {
+    if (numsObj[nums[i]]) delete numsObj[nums[i]];
+    else numsObj[nums[i]] = 1;
+  }
+  return Object.keys(numsObj)[0];
+};
+
+5. 72 ms    35.5 MB         ^= 是异或运算，相同取0，不同取1. 原理是将数组中所有数都一起异或之后值相同的项异或为0,0异或那个只出现一次的项结果为那个项本身
+标签：位运算
+本题根据题意，线性时间复杂度 O(n)O(n)，很容易想到使用 Hash 映射来进行计算，遍历一次后结束得到结果，
+但是在空间复杂度上会达到 O(n)O(n)，需要使用较多的额外空间
+既满足时间复杂度又满足空间复杂度，就要提到位运算中的异或运算 XOR，主要因为异或运算有以下几个特点：
+一个数和 0 做 XOR 运算等于本身：a⊕0 = a
+一个数和其本身做 XOR 运算等于 0：a⊕a = 0
+XOR 运算满足交换律和结合律：a⊕b⊕a = (a⊕a)⊕b = 0⊕b = b （这句是重点 例如：1+1+2 =&gt; 0 +2 =&gt; 2 实现查找唯一元素）
+故而在以上的基础条件上，将所有数字按照顺序做异或运算，最后剩下的结果即为唯一的数字
+时间复杂度：O(n)O(n)，空间复杂度：O(1)O(1)
+
+var singleNumber = function(nums) {
+  let temp = 0;
+  for (let i = 0; i &lt; nums.length; i++) {
+    temp ^= nums[i];
+    return temp;
+  }
+};
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br></div></div><ol start="6"><li><a href="https://leetcode-cn.com/explore/interview/card/top-interview-questions-easy/1/array/26/" target="_blank" rel="noopener noreferrer">两个数组的交集 II<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>1. 76 ms     34.4 MB
+var intersect = function(nums1, nums2) {
+    const len2 = nums2.length;
+    let newArr = [];
+    for(let j = 0; j &lt; len2; j ++) {
+        const indexs = nums1.indexOf(nums2[j]);
+        if(indexs !== -1) {
+            newArr.push(nums2[j]);
+            nums1.splice(indexs, 1)
+        }
+    }     
+     return newArr
+};
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ol start="7"><li><a href="https://leetcode-cn.com/problems/plus-one/submissions/" target="_blank" rel="noopener noreferrer">加一<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>var plusOne = function(digits) {
+    const len = digits.length;
+    for(let i = len - 1; i &gt;= 0; i--) {        // 末尾+1，倒序执行
+        digits[i]++;
+        digits[i] %= 10;                       // 求运算后的余数。如果上一步的digits[i] ++ 为10 ，则这一步的digits[i]为0
+        if(digits[i] != 0)                     // 判断运算后的余数是否为0，不是则直接返回该数组
+            return digits;
+    }
+    digits = [...Array(len + 1)].map(_=&gt;0);     // 数组中的每一个元素都替换为0
+    digits[0] = 1;                              // 第一个元素替换为1
+    return digits;
+};
+
+/*
+
+    难点：这里并没有用类型转换。
+    不涉及到末位为9的数字时，可以正常加减。 当有一位为9时，需要执行前一位进1时，则不满足。
+    1. [...Array(len + 1)].map(_=&gt;0)是将数组中的每一项替换为0。
+    2. len+1 则是执行+1操作时，需要补位的操作。99 + 1= 100
+    3. Array(size) 创建一个长度为size的数组，此时每一项元素为undefied；遍历则是将每一项替换为0
+    4. 当函数作为构造函数被调用时，new Array()的new可以省略，效果不变。
+    5. [...Array()]则是将其继续存到数组中
+
+*/ 
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">2/5/2020, 8:56:39 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/autoTest/lesson1.html" class="prev">
+        前端自动化【源码链接】
+      </a></span> <span class="next"><a href="/guide/typeScript/foreword.html">
+        前言
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.db22b226.js" defer></script><script src="/assets/js/2.1c210bf0.js" defer></script><script src="/assets/js/25.61a6120c.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>正则二 | 🚲 Allan_Liu的博客</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/images/logo.jpeg">
+    
+    <link rel="preload" href="/assets/css/0.styles.3512eafc.css" as="style"><link rel="preload" href="/assets/js/app.db22b226.js" as="script"><link rel="preload" href="/assets/js/2.1c210bf0.js" as="script"><link rel="preload" href="/assets/js/49.4c538c03.js" as="script"><link rel="prefetch" href="/assets/js/10.a04ed6de.js"><link rel="prefetch" href="/assets/js/11.fd334de7.js"><link rel="prefetch" href="/assets/js/12.5e677851.js"><link rel="prefetch" href="/assets/js/13.dea6a201.js"><link rel="prefetch" href="/assets/js/14.04d0a0fd.js"><link rel="prefetch" href="/assets/js/15.6c86a091.js"><link rel="prefetch" href="/assets/js/16.b7ce33a0.js"><link rel="prefetch" href="/assets/js/17.87d1ed06.js"><link rel="prefetch" href="/assets/js/18.45b87eba.js"><link rel="prefetch" href="/assets/js/19.56307369.js"><link rel="prefetch" href="/assets/js/20.25bbbad5.js"><link rel="prefetch" href="/assets/js/21.c2d38ca2.js"><link rel="prefetch" href="/assets/js/22.958b1db0.js"><link rel="prefetch" href="/assets/js/23.2b7d8b6a.js"><link rel="prefetch" href="/assets/js/24.8ca374b0.js"><link rel="prefetch" href="/assets/js/25.61a6120c.js"><link rel="prefetch" href="/assets/js/26.a6dbcf9f.js"><link rel="prefetch" href="/assets/js/27.42ae66b3.js"><link rel="prefetch" href="/assets/js/28.61d8dfcd.js"><link rel="prefetch" href="/assets/js/29.0a5490f3.js"><link rel="prefetch" href="/assets/js/3.166305a0.js"><link rel="prefetch" href="/assets/js/30.eec7751d.js"><link rel="prefetch" href="/assets/js/31.8b3aafdc.js"><link rel="prefetch" href="/assets/js/32.44ebad24.js"><link rel="prefetch" href="/assets/js/33.1196f2e4.js"><link rel="prefetch" href="/assets/js/34.89693eb8.js"><link rel="prefetch" href="/assets/js/35.e9a08c17.js"><link rel="prefetch" href="/assets/js/36.38eaa1e0.js"><link rel="prefetch" href="/assets/js/37.71690d26.js"><link rel="prefetch" href="/assets/js/38.782a7010.js"><link rel="prefetch" href="/assets/js/39.b907c580.js"><link rel="prefetch" href="/assets/js/4.38dc8d13.js"><link rel="prefetch" href="/assets/js/40.f998e32e.js"><link rel="prefetch" href="/assets/js/41.5a48de7b.js"><link rel="prefetch" href="/assets/js/42.5fd76a29.js"><link rel="prefetch" href="/assets/js/43.de530bde.js"><link rel="prefetch" href="/assets/js/44.2eecb315.js"><link rel="prefetch" href="/assets/js/45.47a71ee1.js"><link rel="prefetch" href="/assets/js/46.3455c640.js"><link rel="prefetch" href="/assets/js/47.03c1d6c1.js"><link rel="prefetch" href="/assets/js/48.ee8a0b8f.js"><link rel="prefetch" href="/assets/js/5.f2c78fc3.js"><link rel="prefetch" href="/assets/js/50.34d74c52.js"><link rel="prefetch" href="/assets/js/51.19235ba9.js"><link rel="prefetch" href="/assets/js/52.6dd38434.js"><link rel="prefetch" href="/assets/js/53.3f77d11c.js"><link rel="prefetch" href="/assets/js/54.d9ea78fb.js"><link rel="prefetch" href="/assets/js/55.1650a4e4.js"><link rel="prefetch" href="/assets/js/56.69de1904.js"><link rel="prefetch" href="/assets/js/6.6a6823cc.js"><link rel="prefetch" href="/assets/js/7.43387c2d.js"><link rel="prefetch" href="/assets/js/8.3d44836c.js"><link rel="prefetch" href="/assets/js/9.cdaced83.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3512eafc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">🚲 Allan_Liu的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JavaScript篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/JavaScript/data.html" class="sidebar-link">JavaScript知识总结篇</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>React.js + egg.js</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/Reactjs/react1.html" class="sidebar-link">1. UmiJS 是个啥</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>React篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/React/React-SSR.html" class="sidebar-link">React-SSR 服务器端渲染 源码链接</a></li><li><a href="/guide/React/hooks.html" class="sidebar-link">React - hooks</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端性能篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/performanceOptimization/foreword.html" class="sidebar-link">前言</a></li><li><a href="/guide/performanceOptimization/netWork1.html" class="sidebar-link">网络层优化 - 网络层</a></li><li><a href="/guide/performanceOptimization/netWork2.html" class="sidebar-link">网络层优化 - 请求层</a></li><li><a href="/guide/performanceOptimization/localstorage1.html" class="sidebar-link">存储篇优化 - 浏览器缓存</a></li><li><a href="/guide/performanceOptimization/localstorage2.html" class="sidebar-link">存储篇优化 - 本地缓存</a></li><li><a href="/guide/performanceOptimization/cdn.html" class="sidebar-link">CDN小结</a></li><li><a href="/guide/performanceOptimization/application1.html" class="sidebar-link">应用篇 - 懒加载</a></li><li><a href="/guide/performanceOptimization/application2.html" class="sidebar-link">应用篇 - 防抖、节流</a></li><li><a href="/guide/performanceOptimization/render1.html" class="sidebar-link">渲染篇 - 服务端渲染</a></li><li><a href="/guide/performanceOptimization/render2.html" class="sidebar-link">渲染篇 - 浏览器端渲染</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Angular篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/angular/install.html" class="sidebar-link">Angular 9.0 框架搭建 源码链接</a></li><li><a href="/guide/angular/angular1.html" class="sidebar-link">Angular 基础配置  (1-1)</a></li><li><a href="/guide/angular/angular2.html" class="sidebar-link">Angular 项目结构 (2-1)</a></li><li><a href="/guide/angular/angular3.html" class="sidebar-link">Angular UI组件  (2-2)</a></li><li><a href="/guide/angular/angular4.html" class="sidebar-link">Angular Material (2-3)</a></li><li><a href="/guide/angular/angular5.html" class="sidebar-link">Angular Material (2-4)</a></li><li><a href="/guide/angular/angular7.html" class="sidebar-link">Angular 依赖注入 （4-1）</a></li><li><a href="/guide/angular/angular8.html" class="sidebar-link">Angular基础知识 （4-2）</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>数据库篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/database/mongodb1.html" class="sidebar-link">mongodb 如何在mac构建</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端自动化篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/autoTest/lesson1.html" class="sidebar-link">前端自动化【源码链接】</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>算法篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/arithmetic/array.html" class="sidebar-link">LetCode - 数组篇</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>typeScript篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/typeScript/foreword.html" class="sidebar-link">前言</a></li><li><a href="/guide/typeScript/types.html" class="sidebar-link">定义类型</a></li><li><a href="/guide/typeScript/interface.html" class="sidebar-link">定义接口</a></li><li><a href="/guide/typeScript/class.html" class="sidebar-link">定义类</a></li><li><a href="/guide/typeScript/function.html" class="sidebar-link">定义函数</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Docker篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/Docker/docker1.html" class="sidebar-link">docker</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>小程序篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/miniProgram/taro2.html" class="sidebar-link">Taro 小程序 代码规范</a></li><li><a href="/guide/miniProgram/taro.html" class="sidebar-link">Taro 框架开发小程序环境配置</a></li><li><a href="/guide/miniProgram/taro1.html" class="sidebar-link">Taro 小程序架构设计</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>正则篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/regexp/Regexp.html" class="sidebar-link">正则一</a></li><li><a href="/guide/regexp/Regexp1.html" class="active sidebar-link">正则二</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/regexp/Regexp1.html#正则要么匹配字符，要么匹配位置。" class="sidebar-link">正则要么匹配字符，要么匹配位置。</a></li><li class="sidebar-sub-header"><a href="/guide/regexp/Regexp1.html#零宽断言" class="sidebar-link">零宽断言</a></li><li class="sidebar-sub-header"><a href="/guide/regexp/Regexp1.html#写法一" class="sidebar-link">写法一</a></li><li class="sidebar-sub-header"><a href="/guide/regexp/Regexp1.html#写法二" class="sidebar-link">写法二</a></li><li class="sidebar-sub-header"><a href="/guide/regexp/Regexp1.html#第二章-正则表达式位置匹配" class="sidebar-link">第二章 正则表达式位置匹配</a></li></ul></li><li><a href="/guide/regexp/Regexp2.html" class="sidebar-link">正则三</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>杂记录篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/jottings/https.html" class="sidebar-link">计算机通信知识小结</a></li><li><a href="/guide/jottings/fire.html" class="sidebar-link">火焰图 -- Linux下的性能监控</a></li><li><a href="/guide/jottings/gitLab.html" class="sidebar-link">gitLab</a></li><li><a href="/guide/jottings/gitHub.html" class="sidebar-link">gitHub</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="正则二"><a href="#正则二" class="header-anchor">#</a> 正则二</h1> <div class="language-type= line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br></div><pre class="language-text"><code>/***
+ *
+ * ███████▒█    ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
+ * ▓██   ▒ ██  ▓██▒▒██▀ ▀█   ██▄█▒        ██╔══██╗██║   ██║██╔════╝
+ * ▒████ ░▓██  ▒██░▒▓█    ▄ ▓███▄░        ██████╔╝██║   ██║██║  ███╗
+ * ░▓█▒  ░▓▓█  ░██░▒▓▓▄ ▄██▒▓██ █▄        ██╔══██╗██║   ██║██║   ██║
+ * ░▒█░   ▒▒█████▓ ▒ ▓███▀ ░▒██▒ █▄       ██████╔╝╚██████╔╝╚██████╔╝
+ *  ▒ ░   ░▒▓▒ ▒ ▒ ░ ░▒ ▒  ░▒ ▒▒ ▓▒       ╚═════╝  ╚═════╝  ╚═════╝
+ *  ░     ░░▒░ ░ ░   ░  ▒   ░ ░▒ ▒░
+ *  ░ ░    ░░░ ░ ░ ░        ░ ░░ ░
+ *           ░     ░ ░      ░  ░
+ */
+
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h1 id="第一章-正则表达式字符匹配攻略"><a href="#第一章-正则表达式字符匹配攻略" class="header-anchor">#</a> 第一章 正则表达式字符匹配攻略</h1> <h2 id="正则要么匹配字符，要么匹配位置。"><a href="#正则要么匹配字符，要么匹配位置。" class="header-anchor">#</a> 正则要么匹配字符，要么匹配位置。</h2> <p>元字符：</p> <ul><li>两种模糊匹配</li> <li>字符组</li> <li>量词</li> <li>分支结构</li> <li>案例分析</li></ul> <ol><li><p>纵向匹配 和 横向匹配</p></li> <li><p>字符组：范围表示法 [] ，
+<br> 排除字符组 ^（脱字符），
+<br> 范围字符组 /d , /D , /w , /W , /s , /S 和 . 七种。请看下图：</p></li> <li><p>量词
+<strong>简写形式</strong> {m,}</p></li> <li><p>贪婪与惰性匹配
+<strong>贪婪匹配：</strong> 条件范围内，越多越好。<br> <strong>惰性匹配：</strong> 条件范围内，尽可能少的匹配。通过在量词后面加个？就可以实现惰性匹配。</p></li> <li><p>多选分支
+| （管道符，或）也是惰性的，匹配上以后就不会在继续匹配了。</p></li> <li><p>匹配十六进制的颜色</p></li></ol> <div class="language-type= line-numbers-mode"><div class="highlight-lines"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br></div><pre class="language-text"><code>var regex = /#\w{3,6}/ig
+var string = &quot;#ffbbad #Fc01DF #FFF #ffE&quot;;
+console.log( string.match(regex) );
+//输出：#ffbbad #Fc01DF #FFF #ffE
+
+var regex = /#\w{3,6}$/ig
+var string = &quot;#ffbbad #Fc01DF #FFF #ffE&quot;;
+console.log( string.match(regex) );
+
+/* 重点1：
+	加上$符号以后，为啥只能匹配一条 #ffE ？
+	$限定结尾，又因为正则表达式中，含有“#”；所以只能是从最后一个“#”开头的字符串开始。
+*/
+
+//如果换成：var regex = /^#\w{3,6}$/ig
+
+/* 重点2：
+	结果就会变成null。因为：string是一个字符串，不是4个字符串。
+	而以“#”号开头，以最后一位字母结尾。已经不是在3-6位之间了。
+	所以，string是不符合regex规则的，返回null。
+*/
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><ol start="7"><li>匹配时间（以24小时为例），实现以下匹配:</li></ol> <p><strong>23:59 <br>
+02:07</strong></p> <div class="language-type= line-numbers-mode"><div class="highlight-lines"><div class="highlighted"> </div><br><br><br><br><br></div><pre class="language-text"><code>//这道题需要想一下，24时制的4位数字分别有什么特征。
+
+var regex = /([01][0-9]|[2][0-3]):([0-5][0-9])/g
+var date = '23:59 02:07'
+console.log(date.match(regex))// 输出23:59 02:07
+</code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>现在加入也需要匹配：7:9 （时分前面的“0”可以省略）的情况呢？</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>  var regex = /(0?[0-9]|1[0-9]|[2][0-3]):(0?[0-9]|[1-5][0-9])/g;
+  var date = '23:59 02:07 7:9'
+  console.log(date.match(regex))//输出：23:59 02:07 7:9
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>Tips：</strong><br>
+写到这，觉得&quot;^&quot; 和 &quot;$&quot;这两个字符有必要总结一下。这两个限定符不能随便用，之前没注意到，踩了太多坑。<br>如果想匹配这种&quot;aa ab ac ba bd&quot;
+的字符串格式下的子串。一旦限定开头和结尾，由于搜索的是一整个字符串，所以结果马上就变得截然相反。大家慎用。</p> <ol start="8"><li>匹配日期 2017-09-09</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>	var regex = /[0-9]{4}\-(0?[1-9]|1[0-2])\-([0-2][0-9]|3[0-1])/g
+	var date = '2017-09-09'
+	console.log(date.match(regex))
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><strong>上面的正则没有考虑到“日”为一位数时，不能是0的情况。即“2019-09-00”，正常情况下是不会有这种情况出现的。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>	/[0-9]{4}\-(0?[1-9]|1[0-2])\-(0[1-9]|[12][0-9]|3[01])/g
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>Tips：</strong>
+另外，使用“[]”范围符时，如果是1-2，2-3这种相邻的范围。可以把-省略掉。</p> <ol start="9"><li>window 操作系统文件路径匹配</li></ol> <p><strong>因为文件夹的名字不能是特殊字符，那么就要首先确定一个问题：js的正则中的特殊字符都有哪些？</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>初步断定有以下几种：
+~!@#$%^&amp;*()/\|,.&lt;&gt;?&quot;'();:_+-=\[\]{}
+
+var regex = /^[a-zA-Z]:\\([^\\:*&lt;&gt;|&quot;?\r\n/]+\\)*([^\\:*&lt;&gt;|&quot;?\r\n/]+)?$/;
+console.log( regex.test(&quot;F:\\study\\javascript\\regex\\regular expression.pdf&quot;) );
+console.log( regex.test(&quot;F:\\study\\javascript\\regex\\&quot;) );
+console.log( regex.test(&quot;F:\\study\\javascript&quot;) );
+console.log( regex.test(&quot;F:\\&quot;) );
+// =&gt; true
+// =&gt; true
+// =&gt; true
+// =&gt; true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ol start="10"><li>匹配id</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>var string='&lt;div id=&quot;container&quot; class=&quot;main&quot;&gt;&lt;/div&gt;'
+var regex = /id=&quot;.*&quot;/
+输出：id=&quot;container&quot; class=&quot;main&quot;
+
+Tips:
+	因为*是贪婪匹配，所以会一直匹配到最后一个&quot;才结束。
+	所以，我们加一个?使用非贪婪模式来匹配即可。
+
+var string='&lt;div id=&quot;container&quot; class=&quot;main&quot;&gt;&lt;/div&gt;'
+var regex = /id=&quot;.*?&quot;/
+输出：id=&quot;container&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p><strong>后记：</strong> <br>	这一章练习一些基本的正则操作习题。</p> <hr> <div class="language- line-numbers-mode"><pre class="language-text"><code>/***
+ * ┌───┐   ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┐
+ * │Esc│   │ F1│ F2│ F3│ F4│ │ F5│ F6│ F7│ F8│ │ F9│F10│F11│F12│ │P/S│S L│P/B│  ┌┐    ┌┐    ┌┐
+ * └───┘   └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┘  └┘    └┘    └┘
+ * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐ ┌───┬───┬───┐ ┌───┬───┬───┬───┐
+ * │~ `│! 1│@ 2│# 3│$ 4│% 5│^ 6│&amp; 7│* 8│( 9│) 0│_ -│+ =│ BacSp │ │Ins│Hom│PUp│ │N L│ / │ * │ - │
+ * ├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤ ├───┼───┼───┤ ├───┼───┼───┼───┤
+ * │ Tab │ L │ X │ D │ R │ T │ Y │ U │ I │ O │ P │{ [│} ]│ | \ │ │Del│End│PDn│ │ 7 │ 8 │ 9 │   │
+ * ├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤ └───┴───┴───┘ ├───┼───┼───┤ + │
+ * │ Caps │ A │ S │ D │ F │ G │ H │ J │ K │ L │: ;│&quot; '│ Enter  │               │ 4 │ 5 │ 6 │   │
+ * ├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────────┤     ┌───┐     ├───┼───┼───┼───┤
+ * │ Shift  │ Z │ X │ C │ V │ B │ N │ M │&lt; ,│&gt; .│? /│  Shift   │     │ ↑ │     │ 1 │ 2 │ 3 │   │
+ * ├─────┬──┴─┬─┴──┬┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤ ┌───┼───┼───┐ ├───┴───┼───┤ E││
+ * │ Ctrl│    │Alt │         Space         │ Alt│    │    │Ctrl│ │ ← │ ↓ │ → │ │   0   │ . │←─┘│
+ * └─────┴────┴────┴───────────────────────┴────┴────┴────┴────┘ └───┴───┴───┘ └───────┴───┴───┘
+ */
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h1 id="第二章-正则表达式位置匹配攻略"><a href="#第二章-正则表达式位置匹配攻略" class="header-anchor">#</a> 第二章 正则表达式位置匹配攻略</h1> <h2 id="零宽断言"><a href="#零宽断言" class="header-anchor">#</a> 零宽断言</h2> <table><thead><tr><th>写法</th> <th>名称</th> <th>含义</th></tr></thead> <tbody><tr><td>exp1(?=exp2)</td> <td>正向前瞻</td> <td>查找exp2前面的exp1</td></tr> <tr><td>(?&lt;=exp2)exp1</td> <td>负向前瞻</td> <td>查找exp2后面的exp1</td></tr> <tr><td>exp1(?!exp2)</td> <td>正向后瞻</td> <td>查找后面不是exp2的exp1</td></tr> <tr><td>(?&lt;!exp2)exp1</td> <td>负向后瞻</td> <td>查找前面不是exp2的exp1</td></tr></tbody></table> <p><strong>更方便大家理解，举一个例子：</strong></p> <ol><li>正向先行断言(正向零宽断言)</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>'中国人'.replace(/中(?=国人)/, 'rr')
+输出：rr国人
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="2"><li>反向先行断言</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>'中国人'.replace(/(?&lt;=中国)人/, 'rr')
+输出：中国rr
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="3"><li>负正向先行断言（负向零宽断言）</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>'中国人中'.replace(/中(?!国人)/, 'rr')
+输出：&quot;中国人rr&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="4"><li>负反向先行断言</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>'中国人中'.replace(/中(?&lt;!国人)/, 'rr')
+输出：&quot;rr国人中&quot;
+
+&quot;abZWab863ab88&quot;.replace(/(?&lt;![A-Z])ab/g, &quot;&quot;)
+输出：&quot;ZWab86388&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p><strong>腾讯曾经出过这样一道面试题：<br>如何给一串数字用千分制表示？比如9999999999变成9，999，999，999。</strong></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>'99999999999'.replace(/\d{1,3}(?=(\d{3})+$)/g, '$&amp;,')
+
+//这种是带小数点的千分制正则表达式：
+'99999999999.02'.replace(/\d{1,3}(?=(\d{3})+(?:\.\d{1,2})?$)/g, '$&amp;,');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>要想解答这道题，需要了解以下几个知识点：</strong></p> <ol><li>replace与正则约定的特殊标记符$</li> <li>分组语法</li> <li>贪婪与非贪婪模式</li></ol> <p><strong>1. replace()方法与正则约定的特殊标记符$</strong></p> <table><thead><tr><th>写法</th> <th>含义</th></tr></thead> <tbody><tr><td>$i</td> <td>(i:1-99),表示从左到右正则子表达式所匹配的文本</td></tr> <tr><td>$&amp;</td> <td>表示与正则表达式匹配的全文本</td></tr> <tr><td>$`</td> <td>`：切换技能键。表示匹配字符串左边的文本</td></tr> <tr><td>$$</td> <td>表示$转移</td></tr></tbody></table> <p><strong>Tips:</strong> 另外多说一句：就在刚刚，发现markdown也支持正则写法。。😅	
+😱</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>| $\` | `：切换技能键。表示匹配字符串左边的文本 | 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>2. 分组语法：</strong></p> <table><thead><tr><th>写法</th> <th>含义</th></tr></thead> <tbody><tr><td>捕获</td> <td></td></tr> <tr><td>(exp)</td> <td>匹配exp,并捕获到自动命名到组里</td></tr> <tr><td>(?&lt;name&gt;exp)</td> <td>匹配exp，并捕获文本到名称为name到组里</td></tr> <tr><td>(?:exp)</td> <td>匹配exp，不捕获匹配的文本</td></tr> <tr><td>位置指定</td> <td></td></tr> <tr><td>exp1(?=exp2)</td> <td>查找exp2前面的exp1</td></tr> <tr><td>(?&lt;=exp2)exp1</td> <td>查找exp2后面的exp1</td></tr> <tr><td>exp1(?!exp2)</td> <td>查找后面不是exp2的exp1</td></tr> <tr><td>(?&lt;!exp2)exp1</td> <td>查找前面不是exp2的exp1</td></tr> <tr><td>注释</td> <td></td></tr> <tr><td>(?#comment)</td> <td>这种类型的组不对正则表达式对处理产生任何影响，只是为了提供让人阅读注释</td></tr></tbody></table> <p><strong>3. 贪婪与非贪婪模式：</strong></p> <table><thead><tr><th>写法</th> <th>含义</th></tr></thead> <tbody><tr><td>元字符</td> <td>所有元字符，默认为贪婪模式</td></tr> <tr><td>?</td> <td>非贪婪模式</td></tr></tbody></table> <p>接下来。我们回到这道题上来看：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>'99999999999'.replace(/\d{1,3}(?=(\d{3})+$)/g, '$&amp;,')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>解析：</strong></p> <ol><li>这里我们采用的是 <code>epx1(?=epx2)</code>（<strong>正向前瞻</strong>）<br></li> <li>epx1对应的是正则符号是<code>\d</code>。<br>因为第一个逗号之前的数字范围在1-3个之间，所以限定范围	<code>\d{1-3}</code>。</li> <li>然后，exp2对应的是需要限定每3位数字添加一个<code>,</code><br> 所以<code>epx2</code>的正则表达应该是：<code>(\d{3}+$)</code>（+：出现1次或多次；$:限定以xxx结尾）</li> <li>最后，replace()方法第二个参数：使用<code>$&amp;</code>符号。<br><code>$&amp;,</code>表示捕获<code>与正则表达式匹配的全文本</code>并置换为<code>,</code></li> <li>这样写来下就是<code>'99999999999'.replace(/\d{1,3}(?=(\d{3})+$)/g, '$&amp;,')</code></li></ol> <p>接下来：做一道扩展题：
+有小数点的<code>'99999999999.02'</code>做千分之转换，要怎样写呢？</p> <h2 id="写法一"><a href="#写法一" class="header-anchor">#</a> 写法一</h2> <div class="language- line-numbers-mode"><pre class="language-text"><code>'99999999999.02'.replace(/\d{1,3}(?=(\d{3})+(?:\.\d+)?$)/g, '$&amp;,')
+输出：&quot;99,999,999,999.02&quot;
+
+'99999999999.33333333'.replace(/\d{1,3}(?=(\d{3})+(?:\.\d+)?$)/g, '$&amp;,')
+输出：&quot;99,999,999,999.33,333,333&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h2 id="写法二"><a href="#写法二" class="header-anchor">#</a> 写法二</h2> <p>正则表达式的写法大多数的时候都不止一种。
+千分之表达的另外的一种写法是：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;123456789.12123&quot;.replace(/(?!^)(?=(\d{3})+(?:\.\d+)?$)/g, ',')
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><strong>Tips：</strong> 这种写法与之前的写法最大的区别就是：将exp1的部分改为限定字符串的开头不可以添加<code>,</code></p> <h2 id="第二章-正则表达式位置匹配"><a href="#第二章-正则表达式位置匹配" class="header-anchor">#</a> 第二章 正则表达式位置匹配</h2> <p><strong>前言：</strong> <table><tr><td bgcolor="PowderBlue">        正则表达式根本作用是一种“匹配模式”。要么匹配字符，要么匹配为位置。本章就讲讲关于正则位置匹配的知识：</td></tr></table></p> <ol><li><font face="黑体" color="red">什么是位置呢？</font></li></ol> <p>位置“锚”是相邻字符之间的位置。下图箭头所示的地方就是。</p> <p><img src="https://i.loli.net/2019/07/01/5d195f88d387875631.png" alt=""></p> <ol start="2"><li><font face="黑体" color="red">如何匹配位置呢？</font><br>
+在ES5中，有6个锚：^ $ \b \B (?=exp) (?!exp)</li></ol> <table><thead><tr><th>写法</th> <th>含义</th></tr></thead> <tbody><tr><td>^</td> <td>脱字符，匹配开头，在多行匹配中匹配开头</td></tr> <tr><td>$</td> <td>美元符，匹配结尾，在多行匹配中匹配结尾</td></tr> <tr><td>\b</td> <td>单词边界，具体是\w和\W之间的位置；也包括\w和^之间的位置，\w和$之间的位置。</td></tr> <tr><td>\B</td> <td>\b的反面意思，非单词边界。<br>具体来说是：是 \w 与 \w、 \W 与 \W、^ 与 \W，\W 与 $ 之间的位置。</td></tr> <tr><td>(?=exm)</td> <td>该字符后面的位置要匹配exm</td></tr> <tr><td>(?!exm)</td> <td>该字符后面的位置不可以是exm</td></tr></tbody></table> <table><tr><td bgcolor="PowderBlue">
+\b 和 \B 和 ?=exm 和 ?!exm的例子：
+<ol><li>\b的例子：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;[JS] Lesson_01.mp4&quot;.replace(/\b/g, '#')
+&quot;[#JS#] #Lesson_01#.#mp4#&quot;
+
+//大家思考：为什么会是这样的呢？
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p><strong>解析：</strong><br>
+第 1 个，两边字符是 &quot;[&quot; 与 &quot;J&quot;，是 \W 与 \w 之间的位置。<br>
+第 2 个，两边字符是 &quot;S&quot; 与 &quot;]&quot;，也就是 \w 与 \W 之间的位置。<br>
+第 3 个，两边字符是空格与 &quot;L&quot;，也就是 \W 与 \w 之间的位置。<br>
+第 4 个，两边字符是 &quot;1&quot; 与 &quot;.&quot;，也就是 \w 与 \W 之间的位置。<br>
+第 5 个，两边字符是 &quot;.&quot; 与 &quot;m&quot;，也就是 \W 与 \w之间的位置。<br>
+第 6 个，位于结尾，前面的字符 &quot;4&quot; 是 \w，即 \w 与 $ 之间的位置。<br>
+tips：两边字符是^和&quot;[&quot;，不是\w和^之间到位置。所以没有#。</p> <ol start="2"><li>\B的用法：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;[JS] Lesson_01.mp4&quot;.replace(/\B/g, '#');
+输出：'#[J#S]# L#e#s#s#o#n#_#0#1.m#p#4'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>解析: &quot;]&quot;与空格，属于\W与\W之间的范围。所以加 “#”号。</p> <ol start="3"><li>?=exm 和 ?!exm的用法：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;hello&quot;.replace(/(?=l)/g, '#') // =&gt; &quot;he#l#lo&quot;
+&quot;hello&quot;.replace(/(?!l)/g, '#') // =&gt; &quot;#h#ell#o#&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></td></tr></table> <ol start="3"><li>位置的特性：
+对于位置的理解，我们可以理解成空字符&quot;&quot;。<br>
+可以是这样的：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;hello&quot; == &quot;&quot; + &quot;h&quot; + &quot;&quot; + &quot;e&quot; + &quot;&quot; + &quot;l&quot; + &quot;&quot; + &quot;l&quot; + &quot;&quot; + &quot;o&quot; + &quot;&quot;;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>也可以是这样的：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&quot;hello&quot; == &quot;&quot; + &quot;&quot; + &quot;hello&quot;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><ol start="4"><li>相关案例：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>不匹配任何东西的正则：/.^/ （.是除换行符之外的任意单个字符）
+此正则要求只有一个字符，且该字符后面是开头。这样的正则是不存在的。
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="5"><li><p>数字的千分位分隔符表示法。<a href="https://juejin.im/post/5d1702ed6fb9a07ef1619796" target="_blank" rel="noopener noreferrer">链接<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></li> <li><p>格式化</p></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>1888 =&gt; $1888
+'1888'.replace(/^/, '$') 
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><ol start="7"><li>验证密码问题
+<strong>密码长度6-12位，由数字和小写字符和大写字母组成。必须包括两种字符。</strong></li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>/.*[0-9]/
+任意字符 0次或无数次 数字0到9
+数字0-9中的任意字符出现0或很多次
+
+^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{6,12}$
+
+下面是作者老姚的写法：
+/((?=.*[0-9])(?=.*[a-z])|(?=.*[0-9])(?=.*[A-Z])|(?=.*[a-z])(?=.*[A- Z]))^[0-9A-Za-z]{6,12}$/
+
+或者
+
+/(?!^[0-9]{6,12}$)^[0-9A-Za-z]{6,12}$/;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/11/2020, 10:56:51 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/regexp/Regexp.html" class="prev">
+        正则一
+      </a></span> <span class="next"><a href="/guide/regexp/Regexp2.html">
+        正则三
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.db22b226.js" defer></script><script src="/assets/js/2.1c210bf0.js" defer></script><script src="/assets/js/49.4c538c03.js" defer></script>
+  </body>
+</html>

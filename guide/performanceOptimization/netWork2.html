@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>网络层优化 - 请求层 | 🚲 Allan_Liu的博客</title>
+    <meta name="description" content="Just playing around">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/images/logo.jpeg">
+    
+    <link rel="preload" href="/assets/css/0.styles.3512eafc.css" as="style"><link rel="preload" href="/assets/js/app.db22b226.js" as="script"><link rel="preload" href="/assets/js/2.1c210bf0.js" as="script"><link rel="preload" href="/assets/js/43.de530bde.js" as="script"><link rel="prefetch" href="/assets/js/10.a04ed6de.js"><link rel="prefetch" href="/assets/js/11.fd334de7.js"><link rel="prefetch" href="/assets/js/12.5e677851.js"><link rel="prefetch" href="/assets/js/13.dea6a201.js"><link rel="prefetch" href="/assets/js/14.04d0a0fd.js"><link rel="prefetch" href="/assets/js/15.6c86a091.js"><link rel="prefetch" href="/assets/js/16.b7ce33a0.js"><link rel="prefetch" href="/assets/js/17.87d1ed06.js"><link rel="prefetch" href="/assets/js/18.45b87eba.js"><link rel="prefetch" href="/assets/js/19.56307369.js"><link rel="prefetch" href="/assets/js/20.25bbbad5.js"><link rel="prefetch" href="/assets/js/21.c2d38ca2.js"><link rel="prefetch" href="/assets/js/22.958b1db0.js"><link rel="prefetch" href="/assets/js/23.2b7d8b6a.js"><link rel="prefetch" href="/assets/js/24.8ca374b0.js"><link rel="prefetch" href="/assets/js/25.61a6120c.js"><link rel="prefetch" href="/assets/js/26.a6dbcf9f.js"><link rel="prefetch" href="/assets/js/27.42ae66b3.js"><link rel="prefetch" href="/assets/js/28.61d8dfcd.js"><link rel="prefetch" href="/assets/js/29.0a5490f3.js"><link rel="prefetch" href="/assets/js/3.166305a0.js"><link rel="prefetch" href="/assets/js/30.eec7751d.js"><link rel="prefetch" href="/assets/js/31.8b3aafdc.js"><link rel="prefetch" href="/assets/js/32.44ebad24.js"><link rel="prefetch" href="/assets/js/33.1196f2e4.js"><link rel="prefetch" href="/assets/js/34.89693eb8.js"><link rel="prefetch" href="/assets/js/35.e9a08c17.js"><link rel="prefetch" href="/assets/js/36.38eaa1e0.js"><link rel="prefetch" href="/assets/js/37.71690d26.js"><link rel="prefetch" href="/assets/js/38.782a7010.js"><link rel="prefetch" href="/assets/js/39.b907c580.js"><link rel="prefetch" href="/assets/js/4.38dc8d13.js"><link rel="prefetch" href="/assets/js/40.f998e32e.js"><link rel="prefetch" href="/assets/js/41.5a48de7b.js"><link rel="prefetch" href="/assets/js/42.5fd76a29.js"><link rel="prefetch" href="/assets/js/44.2eecb315.js"><link rel="prefetch" href="/assets/js/45.47a71ee1.js"><link rel="prefetch" href="/assets/js/46.3455c640.js"><link rel="prefetch" href="/assets/js/47.03c1d6c1.js"><link rel="prefetch" href="/assets/js/48.ee8a0b8f.js"><link rel="prefetch" href="/assets/js/49.4c538c03.js"><link rel="prefetch" href="/assets/js/5.f2c78fc3.js"><link rel="prefetch" href="/assets/js/50.34d74c52.js"><link rel="prefetch" href="/assets/js/51.19235ba9.js"><link rel="prefetch" href="/assets/js/52.6dd38434.js"><link rel="prefetch" href="/assets/js/53.3f77d11c.js"><link rel="prefetch" href="/assets/js/54.d9ea78fb.js"><link rel="prefetch" href="/assets/js/55.1650a4e4.js"><link rel="prefetch" href="/assets/js/56.69de1904.js"><link rel="prefetch" href="/assets/js/6.6a6823cc.js"><link rel="prefetch" href="/assets/js/7.43387c2d.js"><link rel="prefetch" href="/assets/js/8.3d44836c.js"><link rel="prefetch" href="/assets/js/9.cdaced83.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3512eafc.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">🚲 Allan_Liu的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>JavaScript篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/JavaScript/data.html" class="sidebar-link">JavaScript知识总结篇</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>React.js + egg.js</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/Reactjs/react1.html" class="sidebar-link">1. UmiJS 是个啥</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>React篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/React/React-SSR.html" class="sidebar-link">React-SSR 服务器端渲染 源码链接</a></li><li><a href="/guide/React/hooks.html" class="sidebar-link">React - hooks</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>前端性能篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/performanceOptimization/foreword.html" class="sidebar-link">前言</a></li><li><a href="/guide/performanceOptimization/netWork1.html" class="sidebar-link">网络层优化 - 网络层</a></li><li><a href="/guide/performanceOptimization/netWork2.html" class="active sidebar-link">网络层优化 - 请求层</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/performanceOptimization/netWork2.html#第一章-webpack性能调优" class="sidebar-link">第一章  webpack性能调优</a></li><li class="sidebar-sub-header"><a href="/guide/performanceOptimization/netWork2.html#第二章-图片的优化" class="sidebar-link">第二章 图片的优化</a></li></ul></li><li><a href="/guide/performanceOptimization/localstorage1.html" class="sidebar-link">存储篇优化 - 浏览器缓存</a></li><li><a href="/guide/performanceOptimization/localstorage2.html" class="sidebar-link">存储篇优化 - 本地缓存</a></li><li><a href="/guide/performanceOptimization/cdn.html" class="sidebar-link">CDN小结</a></li><li><a href="/guide/performanceOptimization/application1.html" class="sidebar-link">应用篇 - 懒加载</a></li><li><a href="/guide/performanceOptimization/application2.html" class="sidebar-link">应用篇 - 防抖、节流</a></li><li><a href="/guide/performanceOptimization/render1.html" class="sidebar-link">渲染篇 - 服务端渲染</a></li><li><a href="/guide/performanceOptimization/render2.html" class="sidebar-link">渲染篇 - 浏览器端渲染</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Angular篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/angular/install.html" class="sidebar-link">Angular 9.0 框架搭建 源码链接</a></li><li><a href="/guide/angular/angular1.html" class="sidebar-link">Angular 基础配置  (1-1)</a></li><li><a href="/guide/angular/angular2.html" class="sidebar-link">Angular 项目结构 (2-1)</a></li><li><a href="/guide/angular/angular3.html" class="sidebar-link">Angular UI组件  (2-2)</a></li><li><a href="/guide/angular/angular4.html" class="sidebar-link">Angular Material (2-3)</a></li><li><a href="/guide/angular/angular5.html" class="sidebar-link">Angular Material (2-4)</a></li><li><a href="/guide/angular/angular7.html" class="sidebar-link">Angular 依赖注入 （4-1）</a></li><li><a href="/guide/angular/angular8.html" class="sidebar-link">Angular基础知识 （4-2）</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>数据库篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/database/mongodb1.html" class="sidebar-link">mongodb 如何在mac构建</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>前端自动化篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/autoTest/lesson1.html" class="sidebar-link">前端自动化【源码链接】</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>算法篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/arithmetic/array.html" class="sidebar-link">LetCode - 数组篇</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>typeScript篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/typeScript/foreword.html" class="sidebar-link">前言</a></li><li><a href="/guide/typeScript/types.html" class="sidebar-link">定义类型</a></li><li><a href="/guide/typeScript/interface.html" class="sidebar-link">定义接口</a></li><li><a href="/guide/typeScript/class.html" class="sidebar-link">定义类</a></li><li><a href="/guide/typeScript/function.html" class="sidebar-link">定义函数</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Docker篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/Docker/docker1.html" class="sidebar-link">docker</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>小程序篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/miniProgram/taro2.html" class="sidebar-link">Taro 小程序 代码规范</a></li><li><a href="/guide/miniProgram/taro.html" class="sidebar-link">Taro 框架开发小程序环境配置</a></li><li><a href="/guide/miniProgram/taro1.html" class="sidebar-link">Taro 小程序架构设计</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>正则篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/regexp/Regexp.html" class="sidebar-link">正则一</a></li><li><a href="/guide/regexp/Regexp1.html" class="sidebar-link">正则二</a></li><li><a href="/guide/regexp/Regexp2.html" class="sidebar-link">正则三</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>杂记录篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/jottings/https.html" class="sidebar-link">计算机通信知识小结</a></li><li><a href="/guide/jottings/fire.html" class="sidebar-link">火焰图 -- Linux下的性能监控</a></li><li><a href="/guide/jottings/gitLab.html" class="sidebar-link">gitLab</a></li><li><a href="/guide/jottings/gitHub.html" class="sidebar-link">gitHub</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="网络层优化-请求层"><a href="#网络层优化-请求层" class="header-anchor">#</a> 网络层优化 - 请求层</h1> <h2 id="第一章-webpack性能调优"><a href="#第一章-webpack性能调优" class="header-anchor">#</a> 第一章  webpack性能调优 <br></h2> <p><b>Http优化：减少请求次数； 减少单次请求花费的时间</b><br>
+这两个问题直指我们日常开发中的常见操作——资源的压缩与合并。就是我们每天用的构建工具霸主：webpack</p> <p><b>webpack优化瓶颈在两个方面：</b></p> <ol><li>webpack 的构建过程太花时间</li> <li>webpack 打包的结果体积太大</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>module: {
+  rules: [
+    {
+      test: /\.js$/,
+      exclude: /(node_modules|bower_components)/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env']
+        }
+      }
+    }
+  ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>解决：减少loader做太多事情 --- 以babel-loader为例子
+每个项目都会用到babel-loader加载器，它是强大，但也是慢的。
+我们最常用的就是使用include和exclude来避免不必要的转移（比如：node——modules）。但是，通过限定文件，带来的性能提升是有限的。除此之外，我们可以开启缓存，将转译记过缓存至系统文件，至少可以将bable-loader的工作效率提升两倍。<code>loader: 'babel-loader?cacheDirectory=true'</code></p> <p><br> <b>不要放过第三方库</b>
+第三方库以 node_modules 为代表，它们庞大得可怕，却又不可或缺。
+于对效率的考虑，我们这里为大家推荐 DllPlugin。</p> <p>DllPlugin 是基于 Windows 动态链接库（dll）的思想被创作出来的。这个插件会把第三方库单独打包到一个文件中，这个文件就是一个单纯的依赖库。这个依赖库不会跟着你的业务代码一起被重新打包，只有当依赖自身发生版本变化时才会重新打包。</p> <p>用 DllPlugin 处理文件，要分两步走：</p> <p>基于 dll 专属的配置文件，打包 dll 库
+基于 webpack.config.js 文件，打包业务代码</p> <p>以一个基于 React 的简单项目为例，我们的 dll 的配置文件可以编写如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const path = require('path')
+const webpack = require('webpack')
+
+module.exports = {
+    entry: {
+      // 依赖的库数组
+      vendor: [
+        'prop-types',
+        'babel-polyfill',
+        'react',
+        'react-dom',
+        'react-router-dom',
+      ]
+    },
+    output: {
+      path: path.join(__dirname, 'dist'),
+      filename: '[name].js',
+      library: '[name]_[hash]',
+    },
+    plugins: [
+      new webpack.DllPlugin({
+        // DllPlugin的name属性需要和libary保持一致
+        name: '[name]_[hash]',
+        path: path.join(__dirname, 'dist', '[name]-manifest.json'),
+        // context需要和webpack.config.js保持一致
+        context: __dirname,
+      }),
+    ],
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p><b>Happypack——将 loader 由单进程转为多进程</b>
+webpack 是单线程的，就算此刻存在多个任务，你也只能排队一个接一个地等待处理。这是 webpack 的缺点，好在我们的 CPU 是多核的，Happypack 会充分释放 CPU 在多核并发方面的优势，帮我们把任务分解给多个子进程去并发执行，大大提升打包效率。</p> <p>只需要我们把对 loader 的配置转移到 HappyPack 中去就好，我们可以手动告诉 HappyPack 我们需要多少个并发的进程：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const HappyPack = require('happypack')
+// 手动创建进程池
+const happyThreadPool =  HappyPack.ThreadPool({ size: os.cpus().length })
+
+module.exports = {
+  module: {
+    rules: [
+      ...
+      {
+        test: /\.js$/,
+        // 问号后面的查询参数指定了处理这类文件的HappyPack实例的名字
+        loader: 'happypack/loader?id=happyBabel',
+        ...
+      },
+    ],
+  },
+  plugins: [
+    ...
+    new HappyPack({
+      // 这个HappyPack的“名字”就叫做happyBabel，和楼上的查询参数遥相呼应
+      id: 'happyBabel',
+      // 指定进程池
+      threadPool: happyThreadPool,
+      loaders: ['babel-loader?cacheDirectory']
+    })
+  ],
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><ol start="2"><li>构建结果体积压缩
+<b>文件结构可视化，找出导致体积过大的原因</b>
+这里为大家介绍一个非常好用的包组成可视化工具——<a href="https://www.npmjs.com/package/webpack-bundle-analyzer" target="_blank" rel="noopener noreferrer">webpack-bundle-analyzer<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，配置方法和普通的 plugin 无异，它会以矩形树图的形式将包内各个模块的大小和依赖关系呈现出来，格局如官方所提供这张图所示：
+<img src="https://i.loli.net/2020/03/09/DZeAWIXLmK5Qosk.gif" alt="165d838010b20a4c.gif"></li></ol> <p>在使用时，我们只需要将其以插件的形式引入：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+ 
+module.exports = {
+  plugins: [
+    new BundleAnalyzerPlugin()
+  ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ol start="3"><li>删除冗余代码
+一个比较典型的应用，就是 Tree-Shaking。
+这里我们以当下接受度较高的 UglifyJsPlugin 为例，看一下如何在压缩过程中对碎片化的冗余代码（如 console 语句、注释等）进行自动化删除：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+module.exports = {
+ plugins: [
+   new UglifyJsPlugin({
+     // 允许并发
+     parallel: true,
+     // 开启缓存
+     cache: true,
+     compress: {
+       // 删除所有的console语句    
+       drop_console: true,
+       // 把使用多次的静态值自动定义为变量
+       reduce_vars: true,
+     },
+     output: {
+       // 不保留注释
+       comment: false,
+       // 使输出的代码尽可能紧凑
+       beautify: false
+     }
+   })
+ ]
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><ol start="4"><li>按需加载
+按需加载的思想：<br></li></ol> <p>一次不加载完所有的文件内容，只加载此刻需要用到的那部分（会提前做拆分）
+<br>当需要更多内容时，再对用到的内容进行即时加载</p> <ol start="5"><li>HTTP 压缩 和 Gzip 压缩原理</li></ol> <p>HTTP 压缩就是以缩小体积为目的，对 HTTP 内容进行重新编码的过程。<br>
+Gzip 的内核就是 Deflate，目前我们压缩文件用得最多的就是 Gzip。可以说，Gzip 就是 HTTP 压缩的经典例题。</p> <h2 id="第二章-图片的优化"><a href="#第二章-图片的优化" class="header-anchor">#</a> 第二章 图片的优化</h2> <p><b> 不同业务场景下的图片方案选型 </b><br>
+二进制位数与色彩的关系: 在计算机中，像素用二进制数来表示。不同的图片格式中像素与二进制位数之间的对应关系是不同的。一个像素对应的二进制位数越多，它可以表示的颜色种类就越多，成像效果也就越细腻，文件体积相应也会越大。<br></p> <p>一个二进制位表示两种颜色（0|1 对应黑|白），如果一种图片格式对应的二进制位数有 n 个，那么它就可以呈现 2^n 种颜色。
+<br></p> <p>时下应用较为广泛的 Web 图片格式有 JPEG/JPG、PNG、WebP、Base64、SVG 等，我制作了一个表格，方便大家记录他们之间的区别：</p> <table><thead><tr><th>类型</th> <th>.jpg</th> <th>.png</th> <th>.svg</th> <th>base64</th> <th>WebP</th></tr></thead> <tbody><tr><td>特点</td> <td>有损压缩；色彩丰富</td> <td>无损压缩、质量高、体积大、支持透明</td> <td>可缩放矢量图形；图片可无限放大而不失真；体积小；兼容性好</td> <td>文本文件、依赖编码、小图标解决方案</td> <td>Google 专为 Web 开发的一种旨在加快图片加载速度的图片格式，它支持有损压缩和无损压缩</td></tr> <tr><td>适用场景</td> <td>大的背景图、轮播图或 Banner 图</td> <td>呈现小的 Logo、颜色简单且对比强烈的图片或背景</td> <td>1. 写代码一样定义 SVG，把它写在 HTML 里、成为 DOM 的一部分，<br>2. 把对图形的描述写入以 .svg 为后缀的独立文件</td> <td>非常小的 Logo</td> <td>WebP 像 JPEG 一样对细节丰富的图片信手拈来，像 PNG 一样支持透明，像 GIF 一样可以显示动态图片——它集多种图片文件格式的优点于一身</td></tr> <tr><td>缺陷</td> <td>1. 处理矢量图形和 Logo 等线条感较强、颜色对比强烈的图像时，会比较模糊；<br>2. 不支持透明度处理</td> <td>体积太大</td> <td>1. 设计SVG可能会变得复杂<br>2. 在某些版本过低的浏览器上无法呈现<br>3. 电子邮件客户端支持有限</td> <td>Base64 编码后，图片大小会膨胀为原文件的 4/3（这是由 Base64 的编码原理决定的）</td> <td>兼容性不好</td></tr></tbody></table></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/12/2020, 3:22:48 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/performanceOptimization/netWork1.html" class="prev">
+        网络层优化 - 网络层
+      </a></span> <span class="next"><a href="/guide/performanceOptimization/localstorage1.html">
+        存储篇优化 - 浏览器缓存
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.db22b226.js" defer></script><script src="/assets/js/2.1c210bf0.js" defer></script><script src="/assets/js/43.de530bde.js" defer></script>
+  </body>
+</html>
