@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>应用篇 - 懒加载 | 🚲 Allan_Liu的博客</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/images/logo.jpeg">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.4c261fea.css" as="style"><link rel="preload" href="/assets/js/app.c845f69d.js" as="script"><link rel="preload" href="/assets/js/2.bd4d3fea.js" as="script"><link rel="preload" href="/assets/js/1.09a35a94.js" as="script"><link rel="preload" href="/assets/js/54.acf949bd.js" as="script"><link rel="prefetch" href="/assets/js/10.3c1f4dbc.js"><link rel="prefetch" href="/assets/js/11.86c6b75e.js"><link rel="prefetch" href="/assets/js/12.b692ab6d.js"><link rel="prefetch" href="/assets/js/13.89152e51.js"><link rel="prefetch" href="/assets/js/14.3f82c5b2.js"><link rel="prefetch" href="/assets/js/15.efa3dd7b.js"><link rel="prefetch" href="/assets/js/16.7e64b4c0.js"><link rel="prefetch" href="/assets/js/17.a3208ce1.js"><link rel="prefetch" href="/assets/js/18.2a8dc9f3.js"><link rel="prefetch" href="/assets/js/19.b75373c3.js"><link rel="prefetch" href="/assets/js/20.8a7b5ffe.js"><link rel="prefetch" href="/assets/js/21.23712926.js"><link rel="prefetch" href="/assets/js/22.d9e9de88.js"><link rel="prefetch" href="/assets/js/23.4f072c45.js"><link rel="prefetch" href="/assets/js/24.6a47a6f2.js"><link rel="prefetch" href="/assets/js/25.dc6ee98d.js"><link rel="prefetch" href="/assets/js/26.91e87287.js"><link rel="prefetch" href="/assets/js/27.90de9f42.js"><link rel="prefetch" href="/assets/js/28.9bbaffc9.js"><link rel="prefetch" href="/assets/js/29.fdd39a7e.js"><link rel="prefetch" href="/assets/js/3.93fe82d5.js"><link rel="prefetch" href="/assets/js/30.13c379b1.js"><link rel="prefetch" href="/assets/js/31.d0429199.js"><link rel="prefetch" href="/assets/js/32.d9043821.js"><link rel="prefetch" href="/assets/js/33.f799af7d.js"><link rel="prefetch" href="/assets/js/34.f51bb7bf.js"><link rel="prefetch" href="/assets/js/35.39e345f9.js"><link rel="prefetch" href="/assets/js/36.aa43cd26.js"><link rel="prefetch" href="/assets/js/37.36a1d98f.js"><link rel="prefetch" href="/assets/js/38.2a8a1217.js"><link rel="prefetch" href="/assets/js/39.33da9def.js"><link rel="prefetch" href="/assets/js/4.4eace7ce.js"><link rel="prefetch" href="/assets/js/40.b8801ade.js"><link rel="prefetch" href="/assets/js/41.12fbf8f9.js"><link rel="prefetch" href="/assets/js/42.001810ee.js"><link rel="prefetch" href="/assets/js/43.29166118.js"><link rel="prefetch" href="/assets/js/44.766d7dcf.js"><link rel="prefetch" href="/assets/js/45.b56762cd.js"><link rel="prefetch" href="/assets/js/46.7f0234f8.js"><link rel="prefetch" href="/assets/js/47.a9009693.js"><link rel="prefetch" href="/assets/js/48.bed03c9d.js"><link rel="prefetch" href="/assets/js/49.1e4801ab.js"><link rel="prefetch" href="/assets/js/5.b5753bf2.js"><link rel="prefetch" href="/assets/js/50.081730bd.js"><link rel="prefetch" href="/assets/js/51.fc80b56e.js"><link rel="prefetch" href="/assets/js/52.8af24c4d.js"><link rel="prefetch" href="/assets/js/53.dd164be9.js"><link rel="prefetch" href="/assets/js/55.8215a637.js"><link rel="prefetch" href="/assets/js/56.7ff46e18.js"><link rel="prefetch" href="/assets/js/57.ec65459c.js"><link rel="prefetch" href="/assets/js/58.5a112567.js"><link rel="prefetch" href="/assets/js/59.ed7a226c.js"><link rel="prefetch" href="/assets/js/6.a8123c81.js"><link rel="prefetch" href="/assets/js/60.ec6fc9a9.js"><link rel="prefetch" href="/assets/js/61.8b05b1e1.js"><link rel="prefetch" href="/assets/js/62.7a76dcf6.js"><link rel="prefetch" href="/assets/js/63.2cbb4ae2.js"><link rel="prefetch" href="/assets/js/64.1b8feeef.js"><link rel="prefetch" href="/assets/js/65.ca37e2a1.js"><link rel="prefetch" href="/assets/js/66.6a7496b6.js"><link rel="prefetch" href="/assets/js/67.b7d45fc1.js"><link rel="prefetch" href="/assets/js/68.6f088643.js"><link rel="prefetch" href="/assets/js/69.773e378d.js"><link rel="prefetch" href="/assets/js/7.e76ff1de.js"><link rel="prefetch" href="/assets/js/70.fd09d386.js"><link rel="prefetch" href="/assets/js/71.fb9d636e.js"><link rel="prefetch" href="/assets/js/72.09d8edd1.js"><link rel="prefetch" href="/assets/js/73.c5f5493e.js"><link rel="prefetch" href="/assets/js/74.bc32d914.js"><link rel="prefetch" href="/assets/js/75.ddb96f73.js"><link rel="prefetch" href="/assets/js/76.8bc4cd14.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.9f962556.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4c261fea.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">🚲 Allan_Liu的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>python篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/python/study.html" class="sidebar-link">python语言相关配置</a></li><li><a href="/guide/python/pyapi.html" class="sidebar-link">python语言常用api</a></li><li><a href="/guide/python/pymethods.html" class="sidebar-link">python语言常用函数</a></li><li><a href="/guide/python/pyfile.html" class="sidebar-link">`</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="应用篇-懒加载"><a href="#应用篇-懒加载" class="header-anchor">#</a> 应用篇 - 懒加载</h1> <div class="custom-block tip"><p class="custom-block-title">优化首屏体验 —— Lazy-Load初探</p> <p>一些其他常见的优化手段。</p></div> <H3>Lazy-Load 探讨</H3> <p>Lazy-Load，翻译过来是“懒加载”。它是针对图片加载时机的优化：在一些图片量比较大的网站（比如电商网站首页，或者团购网站、小游戏首页等），如果我们尝试在用户打开页面的时候，就把所有的图片资源加载完毕，那么很可能会造成白屏、卡顿等现象，因为图片真的太多了，一口气处理这么多任务，浏览器做不到啊！</p> <p>其实，在用户点开页面的瞬间，呈现给他的只有屏幕的一部分（我们称之为首屏）。只要我们可以在页面打开的时候把首屏的图片资源加载出来，用户就会认为页面是没问题的。至于下面的图片，我们完全可以等用户下拉的瞬间再即时去请求、即时呈现给他。这样一来，性能的压力小了，用户的体验却没有变差——这个延迟加载的过程，就是 Lazy-Load。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+  &lt;title&gt;Lazy-Load&lt;/title&gt;
+  &lt;style&gt;
+    .img {
+      width: 200px;
+      height:200px;
+      background-color: gray;
+    }
+    .pic {
+      // 必要的img样式
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;img&quot;&gt;
+      // 注意我们并没有为它引入真实的src
+      &lt;img class=&quot;pic&quot; alt=&quot;加载中&quot; data-src=&quot;./images/1.png&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;img&quot;&gt;
+      &lt;img class=&quot;pic&quot; alt=&quot;加载中&quot; data-src=&quot;./images/2.png&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;img&quot;&gt;
+      &lt;img class=&quot;pic&quot; alt=&quot;加载中&quot; data-src=&quot;./images/3.png&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;img&quot;&gt;
+      &lt;img class=&quot;pic&quot; alt=&quot;加载中&quot; data-src=&quot;./images/4.png&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;img&quot;&gt;
+      &lt;img class=&quot;pic&quot; alt=&quot;加载中&quot; data-src=&quot;./images/5.png&quot;&gt;
+    &lt;/div&gt;
+     &lt;div class=&quot;img&quot;&gt;
+      &lt;img class=&quot;pic&quot; alt=&quot;加载中&quot; data-src=&quot;./images/6.png&quot;&gt;
+    &lt;/div&gt;
+     &lt;div class=&quot;img&quot;&gt;
+      &lt;img class=&quot;pic&quot; alt=&quot;加载中&quot; data-src=&quot;./images/7.png&quot;&gt;
+    &lt;/div&gt;
+     &lt;div class=&quot;img&quot;&gt;
+      &lt;img class=&quot;pic&quot; alt=&quot;加载中&quot; data-src=&quot;./images/8.png&quot;&gt;
+    &lt;/div&gt;
+     &lt;div class=&quot;img&quot;&gt;
+      &lt;img class=&quot;pic&quot; alt=&quot;加载中&quot; data-src=&quot;./images/9.png&quot;&gt;
+    &lt;/div&gt;
+     &lt;div class=&quot;img&quot;&gt;
+      &lt;img class=&quot;pic&quot; alt=&quot;加载中&quot; data-src=&quot;./images/10.png&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br></div></div><p>在懒加载的实现中，有两个关键的数值：<b>一个是当前可视区域的高度，另一个是元素距离可视区域顶部的高度。</b></p> <p>当前可视区域的高度， 在和现代浏览器及 IE9 以上的浏览器中，可以用 window.innerHeight 属性获取。在低版本 IE 的标准模式中，可以用 document.documentElement.clientHeight 获取，这里我们兼容两种情况：</p> <p><code>const viewHeight = window.innerHeight || document.documentElement.clientHeight</code></p> <p>而元素距离可视区域顶部的高度，我们这里选用 getBoundingClientRect() 方法来获取返回元素的大小及其相对于视口的位置。</p> <div class="custom-block tip"><p class="custom-block-title">对此 MDN 给出了非常清晰的解释：</p> <p>该方法的返回值是一个 DOMRect 对象，这个对象是由该元素的 getClientRects() 方法返回的一组矩形的集合, 即：是与该元素相关的 CSS 边框集合 。
+<br>
+DOMRect 对象包含了一组用于描述边框的只读属性——left、top、right 和 bottom，单位为像素。除了 width 和 height 外的属性都是相对于视口的左上角位置而言的。</p></div> <p>其中需要引起我们注意的就是 left、top、right 和 bottom，它们对应到元素上是这样的：</p> <p><img src="https://i.loli.net/2020/03/12/AjGpykzFQtEeY4u.png" alt="微信图片_20200312143923.png"></p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;script&gt;
+    // 获取所有的图片标签
+    const imgs = document.getElementsByTagName('img')
+    // 获取可视区域的高度
+    const viewHeight = window.innerHeight || document.documentElement.clientHeight
+    // num用于统计当前显示到了哪一张图片，避免每次都从第一张图片开始检查是否露出
+    let num = 0
+    function lazyload(){
+        for(let i=num; i&lt;imgs.length; i++) {
+            // 用可视区域高度减去元素顶部距离可视区域顶部的高度
+            let distance = viewHeight - imgs[i].getBoundingClientRect().top
+            // 如果可视区域高度大于等于元素顶部距离可视区域顶部的高度，说明元素露出
+            if(distance &gt;= 0 ){
+                // 给元素写入真实的src，展示图片
+                imgs[i].src = imgs[i].getAttribute('data-src')
+                // 前i张图片已经加载完毕，下次从第i+1张开始检查是否露出
+                num = i + 1
+            }
+        }
+    }
+    // 监听Scroll事件
+    window.addEventListener('scroll', lazyload, false);
+&lt;/script&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p><b> 小结 </b></p> <p>本节我们实现出了一个最基本的懒加载功能。但是大家要注意一点：这个 scroll 事件，是一个危险的事件——它太容易被触发了。试想，用户在访问网页的时候，是不是可以无限次地去触发滚动？尤其是一个页面死活加载不出来的时候，疯狂调戏鼠标滚轮（或者浏览器滚动条）的用户可不在少数啊！</p> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>再回头看看我们上面写的代码。按照我们的逻辑，用户的每一次滚动都将触发我们的监听函数。函数执行是吃性能的，频繁地响应某个事件将造成大量不必要的页面计算。因此，我们需要针对那些有可能被频繁触发的事件作进一步地优化。这里就引出了我们下一节的两位主角——throttle 与 debounce。</p></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">3/12/2020, 3:22:48 PM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.c845f69d.js" defer></script><script src="/assets/js/2.bd4d3fea.js" defer></script><script src="/assets/js/1.09a35a94.js" defer></script><script src="/assets/js/54.acf949bd.js" defer></script>
+  </body>
+</html>

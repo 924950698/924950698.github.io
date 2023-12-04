@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前端自动化【源码链接】 | 🚲 Allan_Liu的博客</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/images/logo.jpeg">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.4c261fea.css" as="style"><link rel="preload" href="/assets/js/app.c845f69d.js" as="script"><link rel="preload" href="/assets/js/2.bd4d3fea.js" as="script"><link rel="preload" href="/assets/js/1.09a35a94.js" as="script"><link rel="preload" href="/assets/js/44.766d7dcf.js" as="script"><link rel="prefetch" href="/assets/js/10.3c1f4dbc.js"><link rel="prefetch" href="/assets/js/11.86c6b75e.js"><link rel="prefetch" href="/assets/js/12.b692ab6d.js"><link rel="prefetch" href="/assets/js/13.89152e51.js"><link rel="prefetch" href="/assets/js/14.3f82c5b2.js"><link rel="prefetch" href="/assets/js/15.efa3dd7b.js"><link rel="prefetch" href="/assets/js/16.7e64b4c0.js"><link rel="prefetch" href="/assets/js/17.a3208ce1.js"><link rel="prefetch" href="/assets/js/18.2a8dc9f3.js"><link rel="prefetch" href="/assets/js/19.b75373c3.js"><link rel="prefetch" href="/assets/js/20.8a7b5ffe.js"><link rel="prefetch" href="/assets/js/21.23712926.js"><link rel="prefetch" href="/assets/js/22.d9e9de88.js"><link rel="prefetch" href="/assets/js/23.4f072c45.js"><link rel="prefetch" href="/assets/js/24.6a47a6f2.js"><link rel="prefetch" href="/assets/js/25.dc6ee98d.js"><link rel="prefetch" href="/assets/js/26.91e87287.js"><link rel="prefetch" href="/assets/js/27.90de9f42.js"><link rel="prefetch" href="/assets/js/28.9bbaffc9.js"><link rel="prefetch" href="/assets/js/29.fdd39a7e.js"><link rel="prefetch" href="/assets/js/3.93fe82d5.js"><link rel="prefetch" href="/assets/js/30.13c379b1.js"><link rel="prefetch" href="/assets/js/31.d0429199.js"><link rel="prefetch" href="/assets/js/32.d9043821.js"><link rel="prefetch" href="/assets/js/33.f799af7d.js"><link rel="prefetch" href="/assets/js/34.f51bb7bf.js"><link rel="prefetch" href="/assets/js/35.39e345f9.js"><link rel="prefetch" href="/assets/js/36.aa43cd26.js"><link rel="prefetch" href="/assets/js/37.36a1d98f.js"><link rel="prefetch" href="/assets/js/38.2a8a1217.js"><link rel="prefetch" href="/assets/js/39.33da9def.js"><link rel="prefetch" href="/assets/js/4.4eace7ce.js"><link rel="prefetch" href="/assets/js/40.b8801ade.js"><link rel="prefetch" href="/assets/js/41.12fbf8f9.js"><link rel="prefetch" href="/assets/js/42.001810ee.js"><link rel="prefetch" href="/assets/js/43.29166118.js"><link rel="prefetch" href="/assets/js/45.b56762cd.js"><link rel="prefetch" href="/assets/js/46.7f0234f8.js"><link rel="prefetch" href="/assets/js/47.a9009693.js"><link rel="prefetch" href="/assets/js/48.bed03c9d.js"><link rel="prefetch" href="/assets/js/49.1e4801ab.js"><link rel="prefetch" href="/assets/js/5.b5753bf2.js"><link rel="prefetch" href="/assets/js/50.081730bd.js"><link rel="prefetch" href="/assets/js/51.fc80b56e.js"><link rel="prefetch" href="/assets/js/52.8af24c4d.js"><link rel="prefetch" href="/assets/js/53.dd164be9.js"><link rel="prefetch" href="/assets/js/54.acf949bd.js"><link rel="prefetch" href="/assets/js/55.8215a637.js"><link rel="prefetch" href="/assets/js/56.7ff46e18.js"><link rel="prefetch" href="/assets/js/57.ec65459c.js"><link rel="prefetch" href="/assets/js/58.5a112567.js"><link rel="prefetch" href="/assets/js/59.ed7a226c.js"><link rel="prefetch" href="/assets/js/6.a8123c81.js"><link rel="prefetch" href="/assets/js/60.ec6fc9a9.js"><link rel="prefetch" href="/assets/js/61.8b05b1e1.js"><link rel="prefetch" href="/assets/js/62.7a76dcf6.js"><link rel="prefetch" href="/assets/js/63.2cbb4ae2.js"><link rel="prefetch" href="/assets/js/64.1b8feeef.js"><link rel="prefetch" href="/assets/js/65.ca37e2a1.js"><link rel="prefetch" href="/assets/js/66.6a7496b6.js"><link rel="prefetch" href="/assets/js/67.b7d45fc1.js"><link rel="prefetch" href="/assets/js/68.6f088643.js"><link rel="prefetch" href="/assets/js/69.773e378d.js"><link rel="prefetch" href="/assets/js/7.e76ff1de.js"><link rel="prefetch" href="/assets/js/70.fd09d386.js"><link rel="prefetch" href="/assets/js/71.fb9d636e.js"><link rel="prefetch" href="/assets/js/72.09d8edd1.js"><link rel="prefetch" href="/assets/js/73.c5f5493e.js"><link rel="prefetch" href="/assets/js/74.bc32d914.js"><link rel="prefetch" href="/assets/js/75.ddb96f73.js"><link rel="prefetch" href="/assets/js/76.8bc4cd14.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.9f962556.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4c261fea.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">🚲 Allan_Liu的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>python篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/python/study.html" class="sidebar-link">python语言相关配置</a></li><li><a href="/guide/python/pyapi.html" class="sidebar-link">python语言常用api</a></li><li><a href="/guide/python/pymethods.html" class="sidebar-link">python语言常用函数</a></li><li><a href="/guide/python/pyfile.html" class="sidebar-link">`</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="前端自动化【源码链接】"><a href="#前端自动化【源码链接】" class="header-anchor">#</a> 前端自动化【<a href="https://github.com/924950698/autoTest" target="_blank" rel="noopener noreferrer">源码链接<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>】</h1> <h2 id="_1-1-简介-什么是前端自动化"><a href="#_1-1-简介-什么是前端自动化" class="header-anchor">#</a> 1-1 简介：什么是前端自动化？</h2> <p>防止bug产生；带到线上造成更大的损失；<br>当前市场上流行的TypeScript， Eslint， flow， styleLint可以帮助我们提高代码质量，但是还不够。作为前端，前端自动化测试可以帮助我们提高代码的质量。自动化测试在后端已经比较普遍了，但是在前端普及的还比较少。<br>本次只作3种测试的讲解：</p> <ol><li>单元测试 (白盒-知道代码逻辑，写代码来测试；测试方法函数)(注：黑盒测试：不知道代码逻辑，通过点击功能去测试)</li> <li>集成测试</li> <li>End to End (端到端测试)</li></ol> <h2 id="_2-2-正文-自动化测试原理"><a href="#_2-2-正文-自动化测试原理" class="header-anchor">#</a> 2-2 正文: 自动化测试原理</h2> <h3 id="_1-单元测试"><a href="#_1-单元测试" class="header-anchor">#</a> 1. 单元测试</h3> <ol><li>创建index.html，math.js, math.test.js三个文件</li> <li>在math.js中创建两个函数方法，并在index.html中引入math.js</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>    function add(a, b) {
+        return a + b;
+    }
+
+    function minus(a, b) {
+        return a * b;
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ol start="3"><li>在math.test.js中嵌入测试代码:</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>    var result = add(3, 7);
+    var expected = 10; 
+
+    if(result !== 10) {
+        throw Error(`3 + 7 应该等于 ${expected}, 但是却是${retult}`);
+    }
+
+    var result = minus(3, 3);
+    var expected = 0;
+
+    if(result !== 0) {
+        throw Error(` 3 - 3 应该等于${expected}, 但是却是${result} `);
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><ol start="4"><li>验证：在浏览器中打开index.html文件，在控制台中可以输入add 或者 minus并回车可以看到该函数体；然后将math.test.js的代码粘贴到控制台中，按回车执行测试函数，显示结果：
+<img src="https://i.loli.net/2019/11/16/p4T3NgZs2mCALKD.png" alt="微信图片_20191116224820.png"></li></ol> <p>在控制台中可以明显检查到，减法函数报出的错误信息，方便开发人员快速修改。</p> <ol start="5"><li>思考，能不能对上面的重复代码做一个封装呢？</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 创作一种语法做测试
+    function expect(result) {
+        return {
+            toBe: function(actual) {
+                if(result !== actual) {
+                    throw Error(`当前值不符合预期值， 预期是${actual}，结果是 ${result}`)
+                }
+            }
+        }
+    }
+
+    function test(desc, fn) {
+        try {
+            fn()
+            console.log(`${desc} 通过测试`);
+        }catch (e) {
+            console.log(`${desc} 没有通过测试 ${e}`);
+        }
+    }
+
+    test('测试加法 3 + 7', () =&gt; {
+        expect(add(3, 7)).toBe(10)
+    })
+
+    test('测试减法 3 - 3', () =&gt; {
+        expect(minus(3, 3)).toBe(10)
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>粘贴到控制台中，显示为：
+<img src="https://i.loli.net/2019/11/16/tvRG4hQ7kxAu2TF.png" alt="微信图片_20191116225647.png"></p> <p>上面代码中，封装了expect方法来进行值比较，封装了test方法补充测试的描述信息。其实和当前市面上比较主流的测试框架Mocha， Jest里里面的语法原理都差不多。</p> <ol start="2"><li>集成测试</li> <li>End to End (端到端测试)</li></ol> <h2 id="_2-3-使用jest修改自动化测试样例"><a href="#_2-3-使用jest修改自动化测试样例" class="header-anchor">#</a> 2-3 使用Jest修改自动化测试样例</h2> <ol><li>npm init生成包工具，下载jest@14.8.0版本,package.json中script命令test替换为jest</li> <li>将math.js作为一个模块导出，</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>    function add(a, b) {
+        return a + b;
+    }
+
+    function minus(a, b) {
+        return a - b;
+    }
+
+
+    module.exports = {
+        add,
+        minus
+    }
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><ol start="3"><li>在math.test.js中引入模块：</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>    const math = require(&quot;./math.js&quot;);
+    const { add, minus } = math;
+
+    test('测试加法 3 + 7', () =&gt; {
+        expect(add(3, 7)).toBe(10)
+    })
+
+    test('测试减法 3 - 3', () =&gt; {
+        expect(minus(3, 3)).toBe(0)
+    })
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ol start="4"><li><p>运行命令： npm run test ，运行正确时结果如下图：
+<img src="https://i.loli.net/2019/11/17/FB8dlSRgC7hcyxI.png" alt="微信图片_20191117125438.png"> <br>运行报错时如下图：
+<img src="https://i.loli.net/2019/11/17/CfjDyQUrh8e76OJ.png" alt=""></p></li> <li><p>为什么math.js导出的需要时一个模块？<br>
+因为jest框架在前端帮助我们完成的是两类的内容：单元测试（单个模块测试）， 集成测试（多个模块测试）；必须要把math.js改造成一个模块，才能符合jest两大测试类型的要求。</p></li></ol> <h2 id="_2-4-jest简单配置"><a href="#_2-4-jest简单配置" class="header-anchor">#</a> 2-4 Jest简单配置</h2> <ol><li>Jest包含默认配置，要更改现有配置，使其更加丰富。类似WebPack</li> <li><code>npx jest --init</code> 进行一个初始化。之后会出现：是否选择jsdom环境；代码覆盖率报告；自动清除事件。完成以后出现jest.config.js文件（常用的jest配置都在这里）。
+将代码覆盖率报告放在coverage目录下</li></ol> <h4 id="_1-code代码覆盖率"><a href="#_1-code代码覆盖率" class="header-anchor">#</a> 1. code代码覆盖率</h4> <p>执行<code>npx jest --coverage</code>生成代码覆盖率报告。
+<img src="https://i.loli.net/2019/11/18/qciu1avmgX6h4TW.png" alt="微信图片_20191118155550.png"></p> <p>会生成一个coverage目录，该目录下有一个index.html文件。打开该文件后，可以直观的看到当前代码覆盖率是100%，
+<img src="https://i.loli.net/2019/11/18/YNeUnKuBPXT5F3o.png" alt="微信图片_20191118155556.png">
+3. jest.config.js中的coverageDirectory可以更改打包报告目录的名字。另外也可以在package.json中将命令替换成<code>coverage: jest --coverage</code>,之后在执行npm run coverage就生产code测试报告了。<br>
+4. 在项目中使用Esmodule语法对模块进行导出和使用，但是在node环境下不支持，需要使用babel转成commonJs的代码。<br>
+5. 下载babel版本：<code>npm install @babel/core@7.4.5 @babel/preset-env@7.4.5 -D</code>。使用babel时对babel进行配置，创建.babelrc文件，在里面写</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+    &quot;presets&quot;: [
+        [&quot;@babel/preset-env&quot;, {
+            &quot;targets&quot;: {
+                &quot;node&quot;: &quot;current&quot;
+            }
+        }]
+    ]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>含义：当前node环境不支持import语句，使用<code>@babel/preset-env</code>对import语句进行转换，转换成commenJS语法，node和Jest就可以识别了。<br>
+6. 执行npm run jest后，jest内部集成了babel-jest插件，它会检测当前环境是否安装了babel-core，<br>如果有，就会去取.babelre配置。<br>在运行测试之前，结合babel，先把代码做一次转换<br>运行转化过的测试用例，就符合commonJs规范</p> <ol start="7"><li>大家如果想了解更多，可以去<a href="https://jestjs.io/docs/en/getting-started.html" target="_blank" rel="noopener noreferrer">Jest官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>看一下，有详细的配置介绍说明和与ts的结合。</li></ol> <h2 id="_2-5-jest中的匹配器"><a href="#_2-5-jest中的匹配器" class="header-anchor">#</a> 2-5 Jest中的匹配器</h2> <ol><li>删除math.js; math.test.js改名字为matchers.test.js并只保留一个测试用例。( <code>--watchAll</code>监视代码改动，自动执行)</li></ol> <h3 id="常用的类型匹配器"><a href="#常用的类型匹配器" class="header-anchor">#</a> 常用的类型匹配器</h3> <ol start="2"><li>toBe 是匹配器 matchers 类似 object.is ===</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>//假如用toBe测试以下内容：
+ test('测试对象a与对象a相等', {
+     const a = {a: 1};
+     expect(a).toBe({a: 1});
+ })
+
+ // 这里由于指向的地址不一样，所以会报错。类似toBe()这种匹配器有很多种，下面介绍一下
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ol start="3"><li>toEqual () 只匹配内容，不匹配引用</li> <li>toBeNull() 可以用来匹配null, undefined; 布尔类型</li> <li>toBeUndefined() 前者匹配a是未定义的； toBeDefined() 后者匹配a是定义过的</li> <li>toBeTruthy() 匹配a是否为真； toBeFalsy()匹配a是否为假</li> <li>not() 取反匹配器</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code> test('not匹配器', {
+    const a = 1;
+    expect(a).not.toBeFalsy();
+    expect(a).toBeTruthy();
+ })
+
+ // a取false的反值，就相当于a为true
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><ol start="8"><li>Jest中有很多这种匹配器，我们不需要都记住，只需要记住其中核心的几个匹配器即可。</li></ol> <h3 id="常用的数字相关的匹配器"><a href="#常用的数字相关的匹配器" class="header-anchor">#</a> 常用的数字相关的匹配器：</h3> <ol><li>toBeGreaterThan()  匹配count比期望值大</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>test('toBeGreaterThan', {
+    const count = 10;
+    expect(count).toBeGreaterThan(9);
+})
+
+//匹配count比期望值9大
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ol start="2"><li>toBeLessThan() 匹配count比期望值小</li> <li>toBeGreaterThanOrEqual() 匹配count大于等于期望值</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>test('toBeGreaterThanOrEqual', {
+    const count = 10;
+    expect(count).toBeGreaterThanOrEqual(10);
+})
+
+// 通过
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><ol start="4"><li>toBeLessThanOrEqual() 匹配count小于等于期望值</li> <li>toBeCloseTo() 匹配浮点数相加减的运算</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>test('toBeCloseTo', {
+    const a = 0.1;
+    const b = 0.2;
+    expect(a+ b).toBeCloseTo(0.3);
+})
+
+// 通过，在js中存在浮点数溢出的情况，不能用toEqual()
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="常用的字符串相关的匹配器"><a href="#常用的字符串相关的匹配器" class="header-anchor">#</a> 常用的字符串相关的匹配器</h3> <ol><li>toMathch() 匹配变量中是否包含某个字符串</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>test('toBeCloseTo', {
+    const str = 'http://www.Allan-Liu.com';
+    expect(str).toBeMatch('Allan-Liu');//通过
+    expect(str).toBeMatch(/Allan-Liu/);//通过
+    expect(str).toBeMatch(/AllanLiu/); //失败
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="常用的数组相关的匹配器"><a href="#常用的数组相关的匹配器" class="header-anchor">#</a> 常用的数组相关的匹配器</h3> <ol><li>toContain() 匹配数组中是否包含某一项 （比较常用）</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>test('toContain', {
+    const arr = ['www', 'Allan', 'Liu'];
+    // 或者 const arr1 = new Set(arr); 结果都是一样的（set和数组不同之处：元素都是唯一） 
+    expect(arr).toContain('Allan');//通过
+    expect(arr).toContain(/AllanLiu/); //失败
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h3 id="常用的处理异常情况的匹配器"><a href="#常用的处理异常情况的匹配器" class="header-anchor">#</a> 常用的处理异常情况的匹配器</h3> <ol><li>toThrow()</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>const throwNewErrorFunc = () =&gt; {
+    Throw new Error('this is a new error');
+}
+
+test('toThrow', {   
+    expect(throwNewErrorFunc).toThrow() // 通过
+    expect(throwNewErrorFunc).toThrow('this is a new error') // 通过
+    expect(throwNewErrorFunc).toThrow('aaa') // 失败，必须要一致
+    expect(throwNewErrorFunc).toThrow(/this is a new error/) // 通过，正则也是可以的
+})
+
+//throwNewErrorFunc()是异常函数，toThrow()与该函数匹配
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h4 id="以上并不是jest中全部的匹配器-了解详情请戳jest官网-了解更多请戳jest官网"><a href="#以上并不是jest中全部的匹配器-了解详情请戳jest官网-了解更多请戳jest官网" class="header-anchor">#</a> 以上并不是Jest中全部的匹配器，了解详情请戳<a href="https://jestjs.io/docs/en/using-matchers" target="_blank" rel="noopener noreferrer">Jest官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，了解更多请戳<a href="https://jestjs.io/docs/zh-Hans/expect" target="_blank" rel="noopener noreferrer">Jest官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <h2 id="_2-6-jest命令行工具的使用"><a href="#_2-6-jest命令行工具的使用" class="header-anchor">#</a> 2-6 Jest命令行工具的使用</h2> <ol><li>用命令行启动vscode，在<code>ctrl+shift+p</code>中搜索下载install code command in PATH。如果搜不到有可能已经添加完成了。如下图：<br> <img src="https://i.loli.net/2019/11/19/tHrxfmj8Vw2okMG.png" alt="微信图片_20191119122327.png"></li> <li>运行npm run test时， 命令行一些按键的作用： （必须是使用git代码管理，Jest才知道哪些是改变的文件） <br>
+f: 只测试之前没有通过的用例，通过的不在测试。再次点击f退出模式<br>
+a: 任何一个测试文件发生了改变，运行所有的测试用例<br>
+o: 当更改一个文件的时候，只运行这个文件里的测试用例<br>
+t: 过滤模式，输入一个单词，执行以该单词结尾的用例<br>
+q: 退出对代码的监控<br>
+Enter：按回车重新运行测试 <br>
+p: 筛选， 文件发生改变时，根据文件名称匹配关键词<br></li></ol> <h2 id="_2-7-异步代码的测试方法"><a href="#_2-7-异步代码的测试方法" class="header-anchor">#</a> 2-7 异步代码的测试方法</h2> <ol><li>当异步函数调用一个回调函数时，该如何编写测试用例</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>const fetchData = (fn) =&gt; {
+  axios.get('******').then((res) =&gt; {
+    fn(res.data)
+  })
+}
+
+测试用例： 
+test( &quot;fetchData函数的测试用例：&quot;, (done) =&gt; {
+  fetchData((data) =&gt; {
+    expect(data).toEqual({
+      sucess: true
+    })
+    done()      // 表明用例执行结束的位置，否则会提前结束用例的执行
+  })
+})
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><ol start="2"><li>当异步函数返回一个请求时，测试用例如下</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code>const fetchData = () =&gt; {
+  return axios.get('******')
+}
+
+测试用例：
+test( &quot;fetchData返回结果为{ sucess: true }&quot;, () =&gt; {
+  return fetchData().then((res) =&gt; {
+    expect(res.data).toEqual({
+      sucess: true
+    })
+  })
+})
+
+test( &quot;fetchData返回结果为404&quot;, () =&gt; {
+  expect.assertion(1);                // assertion(1) 表示jest会执行1次断言
+  return fetchData().catch((e) =&gt; {
+    expect(e.toString().indexOf('404) &gt; -1).toBe(true)
+  })
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><h2 id="_2-11-jest中的mock"><a href="#_2-11-jest中的mock" class="header-anchor">#</a> 2-11 Jest中的Mock</h2> <ol><li>jest.fn()可以用来进行函数模拟</li></ol> <div class="language- line-numbers-mode"><pre class="language-text"><code> * jest.fn()的作用 
+ * 1. 捕获函数的调用和结果 已经this指向和执行顺序 mock()
+ * 2. 可以自由设置返回结果 mockReturnValue()、mockReturnValueOnce()
+ * 3. 异步获取数据改变为同步模拟数据 mockResolvedValue()、mockResolvedValueOnce()
+ * 
+ * mock函数：
+ * mockImplementation()
+ * mockImplementationOnce()方法等价于jest.mock()中的 () =&gt; {}, 可以处理逻辑
+ * toBeCallWidth() 每一次的调用结果
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>还有其他的一些函数，详细可以参考<a href="https://jestjs.io/zh-Hans/docs/api" target="_blank" rel="noopener noreferrer">官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="jest学习暂停"><a href="#jest学习暂停" class="header-anchor">#</a> Jest学习暂停</h3></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/23/2021, 5:05:10 PM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.c845f69d.js" defer></script><script src="/assets/js/2.bd4d3fea.js" defer></script><script src="/assets/js/1.09a35a94.js" defer></script><script src="/assets/js/44.766d7dcf.js" defer></script>
+  </body>
+</html>

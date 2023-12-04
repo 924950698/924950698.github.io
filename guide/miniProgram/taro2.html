@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Taro 小程序 代码规范 | 🚲 Allan_Liu的博客</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/images/logo.jpeg">
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.4c261fea.css" as="style"><link rel="preload" href="/assets/js/app.c845f69d.js" as="script"><link rel="preload" href="/assets/js/2.bd4d3fea.js" as="script"><link rel="preload" href="/assets/js/1.09a35a94.js" as="script"><link rel="preload" href="/assets/js/20.8a7b5ffe.js" as="script"><link rel="prefetch" href="/assets/js/10.3c1f4dbc.js"><link rel="prefetch" href="/assets/js/11.86c6b75e.js"><link rel="prefetch" href="/assets/js/12.b692ab6d.js"><link rel="prefetch" href="/assets/js/13.89152e51.js"><link rel="prefetch" href="/assets/js/14.3f82c5b2.js"><link rel="prefetch" href="/assets/js/15.efa3dd7b.js"><link rel="prefetch" href="/assets/js/16.7e64b4c0.js"><link rel="prefetch" href="/assets/js/17.a3208ce1.js"><link rel="prefetch" href="/assets/js/18.2a8dc9f3.js"><link rel="prefetch" href="/assets/js/19.b75373c3.js"><link rel="prefetch" href="/assets/js/21.23712926.js"><link rel="prefetch" href="/assets/js/22.d9e9de88.js"><link rel="prefetch" href="/assets/js/23.4f072c45.js"><link rel="prefetch" href="/assets/js/24.6a47a6f2.js"><link rel="prefetch" href="/assets/js/25.dc6ee98d.js"><link rel="prefetch" href="/assets/js/26.91e87287.js"><link rel="prefetch" href="/assets/js/27.90de9f42.js"><link rel="prefetch" href="/assets/js/28.9bbaffc9.js"><link rel="prefetch" href="/assets/js/29.fdd39a7e.js"><link rel="prefetch" href="/assets/js/3.93fe82d5.js"><link rel="prefetch" href="/assets/js/30.13c379b1.js"><link rel="prefetch" href="/assets/js/31.d0429199.js"><link rel="prefetch" href="/assets/js/32.d9043821.js"><link rel="prefetch" href="/assets/js/33.f799af7d.js"><link rel="prefetch" href="/assets/js/34.f51bb7bf.js"><link rel="prefetch" href="/assets/js/35.39e345f9.js"><link rel="prefetch" href="/assets/js/36.aa43cd26.js"><link rel="prefetch" href="/assets/js/37.36a1d98f.js"><link rel="prefetch" href="/assets/js/38.2a8a1217.js"><link rel="prefetch" href="/assets/js/39.33da9def.js"><link rel="prefetch" href="/assets/js/4.4eace7ce.js"><link rel="prefetch" href="/assets/js/40.b8801ade.js"><link rel="prefetch" href="/assets/js/41.12fbf8f9.js"><link rel="prefetch" href="/assets/js/42.001810ee.js"><link rel="prefetch" href="/assets/js/43.29166118.js"><link rel="prefetch" href="/assets/js/44.766d7dcf.js"><link rel="prefetch" href="/assets/js/45.b56762cd.js"><link rel="prefetch" href="/assets/js/46.7f0234f8.js"><link rel="prefetch" href="/assets/js/47.a9009693.js"><link rel="prefetch" href="/assets/js/48.bed03c9d.js"><link rel="prefetch" href="/assets/js/49.1e4801ab.js"><link rel="prefetch" href="/assets/js/5.b5753bf2.js"><link rel="prefetch" href="/assets/js/50.081730bd.js"><link rel="prefetch" href="/assets/js/51.fc80b56e.js"><link rel="prefetch" href="/assets/js/52.8af24c4d.js"><link rel="prefetch" href="/assets/js/53.dd164be9.js"><link rel="prefetch" href="/assets/js/54.acf949bd.js"><link rel="prefetch" href="/assets/js/55.8215a637.js"><link rel="prefetch" href="/assets/js/56.7ff46e18.js"><link rel="prefetch" href="/assets/js/57.ec65459c.js"><link rel="prefetch" href="/assets/js/58.5a112567.js"><link rel="prefetch" href="/assets/js/59.ed7a226c.js"><link rel="prefetch" href="/assets/js/6.a8123c81.js"><link rel="prefetch" href="/assets/js/60.ec6fc9a9.js"><link rel="prefetch" href="/assets/js/61.8b05b1e1.js"><link rel="prefetch" href="/assets/js/62.7a76dcf6.js"><link rel="prefetch" href="/assets/js/63.2cbb4ae2.js"><link rel="prefetch" href="/assets/js/64.1b8feeef.js"><link rel="prefetch" href="/assets/js/65.ca37e2a1.js"><link rel="prefetch" href="/assets/js/66.6a7496b6.js"><link rel="prefetch" href="/assets/js/67.b7d45fc1.js"><link rel="prefetch" href="/assets/js/68.6f088643.js"><link rel="prefetch" href="/assets/js/69.773e378d.js"><link rel="prefetch" href="/assets/js/7.e76ff1de.js"><link rel="prefetch" href="/assets/js/70.fd09d386.js"><link rel="prefetch" href="/assets/js/71.fb9d636e.js"><link rel="prefetch" href="/assets/js/72.09d8edd1.js"><link rel="prefetch" href="/assets/js/73.c5f5493e.js"><link rel="prefetch" href="/assets/js/74.bc32d914.js"><link rel="prefetch" href="/assets/js/75.ddb96f73.js"><link rel="prefetch" href="/assets/js/76.8bc4cd14.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.9f962556.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4c261fea.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">🚲 Allan_Liu的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  主页
+</a></div> <a href="https://github.com/924950698" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>python篇</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/python/study.html" class="sidebar-link">python语言相关配置</a></li><li><a href="/guide/python/pyapi.html" class="sidebar-link">python语言常用api</a></li><li><a href="/guide/python/pymethods.html" class="sidebar-link">python语言常用函数</a></li><li><a href="/guide/python/pyfile.html" class="sidebar-link">`</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="taro-小程序-代码规范"><a href="#taro-小程序-代码规范" class="header-anchor">#</a> Taro 小程序 代码规范</h1> <h3>1. 项目目录结构</h3> <p><img src="/assets/img/目录结构.8d389e1a.png" width="465" height="auto" alt="图片名称" align="top"><br></p> <h3>2. 各类型命名规范</h3> <p>注意：在命名时尽量简洁明了，用英文表达（禁止使用首字母缩写、拼音或数字）</p> <p><img src="/assets/img/94AC4CCC-B1F2-4B98-8127-D66B19A4EE29.87dfaa13.png" width="555" height="auto" alt="图片名称" align="top"><br></p> <h3>3. 函数与类的命名</h3> <p>使用 驼峰 命名法<br>
+名字应该明确表达改类的作用<br>
+前缀为动词，前缀词如下表所示<br></p> <p><img src="/assets/img/FCF77CD9-78FF-4697-A011-36B2CC3D1BD1.53bd4dab.png" width="555" height="auto" alt="图片名称" align="top"><br></p> <h3>4. 文件命名规范</h3> <p>a. Taro 中普通 JS/TS 文件以小写字母命名，~~多个单词以下划线连接，例如 util.js、util_helper.js，~~这里经讨论修改为中划线命名法，例如 util-helper.js <br>
+b. Taro 组件文件命名，~~官方文档建议遵循 React 开发规范，即 Pascal 命名法，例如 ReservationCard.jsx，~~这里建议按小程序规范，即中划线命名法，例如 reservation-card.jsx</p> <h3> 5. 书写顺序 </h3> <p>在 Taro 组件中会包含类静态属性、类属性、生命周期等的类成员，其书写顺序最好遵循以下约定（顺序从上至下）</p> <ol><li>static 静态方法</li> <li>constructor</li> <li>componentWillMount</li> <li>componentDidMount</li> <li>componentWillReceiveProps</li> <li>shouldComponentUpdate</li> <li>componentWillUpdate</li> <li>componentDidUpdate</li> <li>componentWillUnmount</li> <li>点击回调或者事件回调 比如 onClickSubmit() 或者 onChangeDescription()</li> <li>render</li></ol> <h3>6 组件创建</h3> <p>Taro 中组件以类的形式进行创建，并且单个文件中只能存在单个组件</p> <h3>7 属性书写</h3> <p>属性名称始终使用驼峰命名法</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>    // bad
+    &lt;Foo
+    UserName='hello'
+    phone_number={12345678}
+    /&gt;
+
+    // good
+    &lt;Foo
+    userName='hello'
+    phoneNumber={12345678}
+    /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3>8 JSX 与括号 </h3> <p>用括号包裹多行 JSX 标签</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+render () {
+  return &lt;MyComponent className='long body' foo='bar'&gt;
+           &lt;MyChild /&gt;
+         &lt;/MyComponent&gt;
+}
+
+// good
+render () {
+  return (
+    &lt;MyComponent className='long body' foo='bar'&gt;
+      &lt;MyChild /&gt;
+    &lt;/MyComponent&gt;
+  )
+}
+
+// good
+render () {
+  const body = &lt;div&gt;hello&lt;/div&gt;
+  return &lt;MyComponent&gt;{body}&lt;/MyComponent&gt;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><h3> 9 标签 </h3> <p>当标签没有子元素时，始终使用自闭合标签</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+&lt;Foo className='stuff'&gt;&lt;/Foo&gt;
+
+// good
+&lt;Foo className='stuff' /&gt;
+// 如果控件有多行属性，关闭标签要另起一行
+
+// bad
+&lt;Foo
+  bar='bar'
+  baz='baz' /&gt;
+
+// good
+&lt;Foo
+  bar='bar'
+  baz='baz'
+/&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3> 10 对齐方式</h3> <p>多个属性，多行书写，每个属性占用一行，标签结束另起一行</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>// bad
+&lt;Foo superLongParam='bar'
+     anotherSuperLongParam='baz' /&gt;
+
+// good
+&lt;Foo
+  superLongParam='bar'
+  anotherSuperLongParam='baz'
+/&gt;
+
+// 如果组件的属性可以放在一行就保持在当前一行中
+&lt;Foo bar='bar' /&gt;
+
+// 多行属性采用缩进
+&lt;Foo
+  superLongParam='bar'
+  anotherSuperLongParam='baz'
+&gt;
+  &lt;Quux /&gt;
+&lt;/Foo&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3>11 推荐使用对象解构的方式来使用 state、props</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>    import Taro, { Component } from '@tarojs/taro';
+    import { View, Input } from '@tarojs/components';
+
+    class MyComponent extends Component {
+    state = {
+        myTime: 12,
+    };
+    render() {
+        const { isEnable } = this.props; // ✓ 正确
+        const { myTime } = this.state; // ✓ 正确
+        return (
+        &lt;View className=&quot;test&quot;&gt;
+            {isEnable &amp;&amp; &lt;Text className=&quot;test_text&quot;&gt;{myTime}&lt;/Text&gt;}
+        &lt;/View&gt;
+        );
+    }
+    }
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3>12 不要以 class/id/style 作为自定义组件的属性名</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;Hello class='foo' /&gt;     // ✗ 错误
+&lt;Hello id='foo' /&gt;     // ✗ 错误
+&lt;Hello style='foo' /&gt;     // ✗ 错误
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3>13 书写顺序不要使用 HTML 标签</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;div className='foo'&gt;&lt;/div&gt;     // ✗ 错误
+&lt;span id='foo' /&gt;&lt;/span&gt;    // ✗ 错误
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3>14 书写顺序不要在调用 this.setState 时使用 this.state</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>this.setState({
+  value: this.state.value + 1,
+}); // ✗ 错误
+
+this.setState((prevState) =&gt; ({ value: prevState.value + 1 })); // ✓ 正确
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3>15 map 循环时请给元素加上 key 属性 </h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>list.map((item) =&gt; {
+  return (
+    &lt;View className=&quot;list_item&quot; key={item.id}&gt;
+      {item.name}
+    &lt;/View&gt;
+  );
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3>16 尽量避免在 componentDidMount 中调用 this.setState</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Taro, { Component } from '@tarojs/taro';
+import { View, Input } from '@tarojs/components';
+
+class MyComponent extends Component {
+  state = {
+    myTime: 12,
+  };
+
+  componentDidMount() {
+    this.setState({
+      // ✗ 尽量避免，可以在 componentWillMount 中处理
+      name: 1,
+    });
+  }
+
+  render() {
+    const { isEnable } = this.props;
+    const { myTime } = this.state;
+    return (
+      &lt;View className=&quot;test&quot;&gt;
+        {isEnable &amp;&amp; &lt;Text className=&quot;test_text&quot;&gt;{myTime}&lt;/Text&gt;}
+      &lt;/View&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><h3>17 不要在 componentWillUpdate/componentDidUpdate/render 中调用 this.setState</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Taro, { Component } from '@tarojs/taro';
+import { View, Input } from '@tarojs/components';
+
+class MyComponent extends Component {
+  state = {
+    myTime: 12,
+  };
+
+  componentWillUpdate() {
+    this.setState({
+      // ✗ 错误
+      name: 1,
+    });
+  }
+
+  componentDidUpdate() {
+    this.setState({
+      // ✗ 错误
+      name: 1,
+    });
+  }
+
+  render() {
+    const { isEnable } = this.props;
+    const { myTime } = this.state;
+    this.setState({
+      // ✗ 错误
+      name: 11,
+    });
+    return (
+      &lt;View className=&quot;test&quot;&gt;
+        {isEnable &amp;&amp; &lt;Text className=&quot;test_text&quot;&gt;{myTime}&lt;/Text&gt;}
+      &lt;/View&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br></div></div><h3>18 组件最好定义 defaultProps</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Taro, { Component } from '@tarojs/taro';
+import { View, Input } from '@tarojs/components';
+
+class MyComponent extends Component {
+  static defaultProps = {
+    isEnable: true,
+  };
+
+  state = {
+    myTime: 12,
+  };
+
+  render() {
+    const { isEnable } = this.props;
+    const { myTime } = this.state;
+
+    return (
+      &lt;View className=&quot;test&quot;&gt;
+        {isEnable &amp;&amp; &lt;Text className=&quot;test_text&quot;&gt;{myTime}&lt;/Text&gt;}
+      &lt;/View&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><h3>19 render 方法必须有返回值</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Taro, { Component } from '@tarojs/taro'
+import { View, Input } from '@tarojs/components'
+
+class MyComponent extends Component {
+  state = {
+    myTime: 12
+  }
+
+  render () {   // ✗ 没有返回值
+    const { isEnable } = this.props
+    const { myTime } = this.state
+
+    &lt;View className='test'&gt;
+      {isEnable &amp;&amp; &lt;Text className=&quot;test_text&quot;&gt;{myTime}&lt;/Text&gt;}
+    &lt;/View&gt;
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3>20 值为 true 的属性可以省略书写值</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;Hello personal /&gt;
+&lt;Hello personal={false} /&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3>21 事件绑定均以 on 开头</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Taro, { Component } from '@tarojs/taro';
+import { View, Input } from '@tarojs/components';
+
+class MyComponent extends Component {
+  state = {
+    myTime: 12,
+  };
+
+  clickHandler(e) {
+    console.log(e);
+  }
+
+  render() {
+    const { myTime } = this.state;
+
+    return (
+      &lt;View className=&quot;test&quot; onClick={this.clickHandler}&gt;
+        {' '}
+        // ✓ 正确
+        &lt;Text className=&quot;test_text&quot;&gt;{myTime}&lt;/Text&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h3>子组件传入函数时属性名需要以 on 开头</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>import Taro, { Component } from '@tarojs/taro';
+import { View, Input } from '@tarojs/components';
+
+import Tab from '../../components/Tab/Tab';
+
+class MyComponent extends Component {
+  state = {
+    myTime: 12,
+  };
+
+  clickHandler(e) {
+    console.log(e);
+  }
+
+  render() {
+    const { myTime } = this.state;
+
+    return (
+      &lt;View className=&quot;test&quot;&gt;
+        &lt;Tab onChange={this.clickHandler} /&gt; // ✓ 正确
+        &lt;Text className=&quot;test_text&quot;&gt;{myTime}&lt;/Text&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3>22 不能使用 Array#map 之外的方法操作 JSX 数组</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>numbers.filter(isOdd).map((number) =&gt; &lt;View /&gt;);
+
+for (let index = 0; index &lt; array.length; index++) {
+  // do you thing with array
+}
+
+const element = array.map((item) =&gt; {
+  return &lt;View /&gt;;
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3>23 项目规范</h3> <ol><li>项目常量和枚举需要注释声明内容，方法上添加注释声明方法功能，方法行数大于十行说明方法具体内容</li> <li>类型建议添加 interface 或者 type 声明</li> <li>表单提交添加防抖，有订阅情况离开页面需销毁</li></ol> <h3>24 taro 自定义 tabbar 状态管理不能用以前的小程序的逻辑，可通过如下写法去管理</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>if (typeof this.$scope.getTabBar === 'function' &amp;&amp; this.$scope.getTabBar()) {
+  this.$scope.getTabBar().$component.setState({
+    selected: 'home',
+  });
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">7/31/2020, 1:41:10 PM</span></div></footer> <!----> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.c845f69d.js" defer></script><script src="/assets/js/2.bd4d3fea.js" defer></script><script src="/assets/js/1.09a35a94.js" defer></script><script src="/assets/js/20.8a7b5ffe.js" defer></script>
+  </body>
+</html>
